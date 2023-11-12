@@ -1,4 +1,4 @@
-import { LanguageSwitcher, Logo, Search, SocialSvg } from '@/components';
+import { LanguageSwitcher, Logo, Search } from '@/components';
 import { SocialMedia } from '../social-media';
 
 export const Header = () => {

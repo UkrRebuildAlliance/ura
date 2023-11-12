@@ -3,7 +3,7 @@ import In from '@/assets/svg/social/in.svg?react';
 import Tg from '@/assets/svg/social/tg.svg?react';
 import Inst from '@/assets/svg/social/inst.svg?react';
 
-import { SocialSvg } from '../social-svg';
+import { SocialSvg } from '@/components/';
 import clsx from 'clsx';
 
 export const SocialMedia = ({ className }: { className: string }) => {
