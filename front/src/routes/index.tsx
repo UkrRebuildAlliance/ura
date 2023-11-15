@@ -3,7 +3,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import { Dashboard } from '@/pages';
 import { routes } from '@/components/constants';
 import { Main, ProtectedRoute } from '@/components';
-import { Filter } from '@/components/filter/inedx';
+import { Filter } from '@/components/filter';
 
 const { client, admin, login } = routes;
 

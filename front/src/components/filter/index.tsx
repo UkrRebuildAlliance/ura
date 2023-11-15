@@ -4,14 +4,7 @@ export const Filter = ({}) => {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
 
-  const paramsObject = {};
+  const paramsObject = searchParams.get('name');
 
-  searchParams.forEach((value, key) => {
-    // @ts-ignore
-    paramsObject[key] = value;
-  });
-
-  console.log(paramsObject);
-
-  return <>asdasd</>;
+  return <div className="pt-[350px]">{`${paramsObject}`}</div>;
 };

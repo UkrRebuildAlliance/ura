@@ -17,6 +17,7 @@ export const Search = ({
   const sendRequest = () => {
     if (search.length < 3) return;
     navigate(`/search?name=${search}`);
+    setSearch('');
   };
 
   const onKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
