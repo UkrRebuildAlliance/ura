@@ -21,8 +21,8 @@ export const Logo = ({ className }: { className?: string }) => {
       onClick={handleClick}
       style={{ backgroundImage: `url(${logo})` }}
       className={clsx(
+        'w-[120.0008px] h-[49px] tablet:w-[211.9992px] tablet:h-[49.9992px] bg-contain bg-no-repeat bg-center cursor-pointer',
         className,
-        'w-[100.0008px] h-[24px] tablet:w-[211.9992px] tablet:h-[49.9992px] bg-contain bg-no-repeat bg-center cursor-pointer',
       )}
     />
   );
