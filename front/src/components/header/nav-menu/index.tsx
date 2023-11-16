@@ -24,9 +24,9 @@ export const NavMenu = ({ activeLink, handleClick }: INav) => {
           {typeof activeLink !== 'boolean' &&
             navLinks[activeLink].map((el, idx) => (
               <Link
-                onClick={() => handleClick(false)}
                 to={el.href}
                 key={`${el.name}-${idx}-desktop`}
+                onClick={() => handleClick(false)}
                 className="font-normal capitalize text-white border-b border-transparent text-[20px] font-montserrat hover:border-white"
               >
                 {el.name}

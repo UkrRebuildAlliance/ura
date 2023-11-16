@@ -49,9 +49,14 @@ export const BurgerNav = ({
         <BurgerList
           links={menuLinks.activities}
           text={t('navbar.activities')}
+          setIsBurgerActive={setIsBurgerActive}
         />
 
-        <BurgerList text={t('navbar.about_us')} links={menuLinks.about} />
+        <BurgerList
+          links={menuLinks.about}
+          text={t('navbar.about_us')}
+          setIsBurgerActive={setIsBurgerActive}
+        />
 
         <Link
           to={menuLinks.contact}

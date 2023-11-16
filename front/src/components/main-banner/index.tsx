@@ -1,17 +1,18 @@
-import { banners } from './config';
+import clsx from 'clsx';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { MainBannerCard } from './main-banner-card';
+import { EffectFade, Autoplay } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { EffectFade, Autoplay } from 'swiper/modules';
-import { MainBannerCard } from './main-banner-card';
+import { banners } from './config';
 
-export const MainBanner = () => {
+export const MainBanner = ({ className }: { className?: string }) => {
   return (
-    <div className="laptop:pt-8 laptop:px-5">
+    <div className={clsx('laptop:pt-8 laptop:px-5', className)}>
       <Swiper
         effect="fade"
         speed={3300}
