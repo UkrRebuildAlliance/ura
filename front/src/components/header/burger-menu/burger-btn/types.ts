@@ -13,4 +13,5 @@ export interface IBurgerBtn {
   className?: string;
   links?: burgerLink[];
   onClick?: Dispatch<SetStateAction<number>>;
+  setIsBurgerActive: Dispatch<SetStateAction<boolean>>;
 }

@@ -21,4 +21,15 @@ export const en = {
     social_title: 'Social networks',
     copyright: 'Copyright',
   },
+  main_banners_cards: {
+    ttl1: 'The population is the main beneficiary of the country',
+    ttl2: 'Every Ukrainian is important to us',
+    ttl3: 'Together we will build our country',
+    content1:
+      'Our mission is to create conditions for Ukrainians to return home.',
+    content2:
+      'Improving the pension programme. Benefits and special programmes for pensioners',
+    content3:
+      'We create and implement the most comfortable complexes in the best eco-locations',
+  },
 };

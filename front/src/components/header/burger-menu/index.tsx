@@ -1,3 +1,4 @@
+import { Dispatch, SetStateAction } from 'react';
 import clsx from 'clsx';
 
 import { Search, SocialMedia } from '@/components';
@@ -7,14 +8,19 @@ import { BurgerNav } from './burger-nav';
 interface IBurgerMenu {
   className?: string;
   isBurgerActive: boolean;
+  setIsBurgerActive: Dispatch<SetStateAction<boolean>>;
 }
 
-export const BurgerMenu = ({ className, isBurgerActive }: IBurgerMenu) => {
+export const BurgerMenu = ({
+  className,
+  isBurgerActive,
+  setIsBurgerActive,
+}: IBurgerMenu) => {
   return (
     <div
       className={clsx(
         className,
-        ' fixed lef-0 top-[111px]  tablet:top-[112px] w-full h-[calc(100vh-112px)] desktop:hidden bg-white transition duration-300 p-[30px] laptop:pt-[90px]',
+        ' fixed lef-0 top-[111px] tablet:top-[112px] w-full h-[calc(100vh-112px)] desktop:hidden bg-white transition duration-300 p-[30px] laptop:pt-[90px] z-[999]',
         {
           'translate-x-0': isBurgerActive,
           '-translate-x-full': !isBurgerActive,
@@ -26,7 +32,7 @@ export const BurgerMenu = ({ className, isBurgerActive }: IBurgerMenu) => {
 
         <SocialMedia withBg />
 
-        <BurgerNav />
+        <BurgerNav setIsBurgerActive={setIsBurgerActive} />
       </div>
     </div>
   );

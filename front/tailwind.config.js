@@ -12,12 +12,16 @@ export default {
       },
       colors: {
         borderP: '#483BC9',
+        blueBlack: '#1A1035',
       },
       backgroundImage: {
         mainGradient: 'linear-gradient(91deg, #483BC9 1.96%, #8A58B7 100%);',
         svgGradient: 'linear-gradient(135deg, #483BC9 0%, #8A58B7 100%);',
+        mainBanner:
+          'linear-gradient(180deg, #483BC9 0%, #9108FC 48.96%, #F0F600 100%);',
       },
       screens: {
+        sm: '576px',
         tablet: '768px',
         // => @media (min-width: 640px) { ... }
 

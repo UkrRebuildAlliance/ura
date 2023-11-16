@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, Dispatch, SetStateAction } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -6,7 +6,11 @@ import { menuLinks } from '../../links';
 import { BurgerBtn } from '../burger-btn';
 import { BurgerList } from '../burger-list';
 
-export const BurgerNav = ({}) => {
+export const BurgerNav = ({
+  setIsBurgerActive,
+}: {
+  setIsBurgerActive: Dispatch<SetStateAction<boolean>>;
+}) => {
   const { t } = useTranslation();
 
   const [activeBtn, setActiveBtn] = useState<number>(-1);
@@ -16,25 +20,28 @@ export const BurgerNav = ({}) => {
       <div className=" flex flex-col max-w-[300px] laptop:max-w-full w-full self-start gap-7 laptop:hidden">
         <BurgerBtn
           btnId={0}
-          text={t('navbar.activities')}
           activeBtn={activeBtn}
           onClick={setActiveBtn}
           links={menuLinks.activities}
+          text={t('navbar.activities')}
+          setIsBurgerActive={setIsBurgerActive}
         />
 
         <BurgerBtn
           btnId={1}
-          text={t('navbar.about_us')}
           activeBtn={activeBtn}
           onClick={setActiveBtn}
           links={menuLinks.about}
+          text={t('navbar.about_us')}
+          setIsBurgerActive={setIsBurgerActive}
         />
 
         <BurgerBtn
           btnId={3}
-          text={t('navbar.contacts')}
           activeBtn={activeBtn}
           href={menuLinks.contact}
+          text={t('navbar.contacts')}
+          setIsBurgerActive={setIsBurgerActive}
         />
       </div>
 

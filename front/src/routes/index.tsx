@@ -2,7 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 
 import { routes } from '@/constants';
 import { ProtectedRoute } from '@/components';
-import { Dashboard, SearchPage, LayoutClient } from '@/pages';
+import { Dashboard, SearchPage, LayoutClient, HomePage } from '@/pages';
 
 const { client, admin, login } = routes;
 
@@ -11,7 +11,7 @@ export const router = createBrowserRouter([
     path: '/',
     element: <LayoutClient />,
     children: [
-      { index: true, element: <h1>MAIN</h1> },
+      { index: true, element: <HomePage /> },
       { path: client.news, element: <h1>news</h1> },
       { path: client.news_id, element: <h1>news/id =</h1> },
       { path: client.partner, element: <h1>partners</h1> },
