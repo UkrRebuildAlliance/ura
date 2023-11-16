@@ -1,7 +1,7 @@
+import clsx from 'clsx';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 import logo from '@/assets/img/logo.png';
-import clsx from 'clsx';
 
 export const Logo = ({ className }: { className?: string }) => {
   const { pathname } = useLocation();

@@ -1,7 +1,8 @@
 import { Outlet } from 'react-router-dom';
-import { Footer, Header } from '..';
 
-export const Main = () => {
+import { Footer, Header } from '@/components';
+
+export const LayoutClient = () => {
   return (
     <>
       <Header />

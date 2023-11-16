@@ -1,7 +1,8 @@
 import i18n from '@/i18n';
 
+import { routes } from '@/constants';
+
 import { IMenuLink } from './types';
-import { routes } from '../constants/routes';
 
 const { client } = routes;
 

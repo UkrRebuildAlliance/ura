@@ -1,6 +1,5 @@
-import { Navigate } from 'react-router-dom';
-
 import Cookies from 'js-cookie';
+import { Navigate } from 'react-router-dom';
 
 import { ChildrenProps } from '@/types';
 

@@ -3,14 +3,16 @@ import clsx from 'clsx';
 
 import BurgerIcon from '@/assets/svg/social/burger.svg?react';
 
+interface IBurger {
+  className?: string;
+  isActive: boolean;
+}
+
 export const Burger = ({
   isActive,
   className,
   ...props
-}: {
-  className?: string;
-  isActive: boolean;
-} & ButtonHTMLAttributes<HTMLButtonElement>) => {
+}: IBurger & ButtonHTMLAttributes<HTMLButtonElement>) => {
   return (
     <button
       {...props}

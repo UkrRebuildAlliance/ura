@@ -16,11 +16,10 @@ export const Header = () => {
   const handleClick = (id: IHandelId) => {
     if (id === activeLink) {
       setActiveLink(false);
+      return;
     }
 
-    if (id !== activeLink) {
-      setActiveLink(id);
-    }
+    setActiveLink(id);
   };
 
   useEffect(() => {

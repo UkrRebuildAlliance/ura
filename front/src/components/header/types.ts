@@ -5,21 +5,16 @@ export interface INav {
   handleClick: (id: IHandelId) => void;
 }
 
+interface INavObj {
+  name: string;
+  href: string;
+}
 export interface INavLink {
-  [key: string]: {
-    name: string;
-    href: string;
-  }[];
+  [key: string]: INavObj[];
 }
 
 export interface IMenuLink {
-  activities: {
-    name: string;
-    href: string;
-  }[];
-  about: {
-    name: string;
-    href: string;
-  }[];
+  activities: INavObj[];
+  about: INavObj[];
   contact: string;
 }

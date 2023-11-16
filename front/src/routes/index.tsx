@@ -1,16 +1,15 @@
 import { createBrowserRouter } from 'react-router-dom';
 
-import { Dashboard } from '@/pages';
-import { routes } from '@/components/constants';
-import { Main, ProtectedRoute } from '@/components';
-import { Filter } from '@/components/filter';
+import { routes } from '@/constants';
+import { ProtectedRoute } from '@/components';
+import { Dashboard, SearchPage, LayoutClient } from '@/pages';
 
 const { client, admin, login } = routes;
 
 export const router = createBrowserRouter([
   {
     path: '/',
-    element: <Main />,
+    element: <LayoutClient />,
     children: [
       { index: true, element: <h1>MAIN</h1> },
       { path: client.news, element: <h1>news</h1> },
@@ -24,7 +23,7 @@ export const router = createBrowserRouter([
       { path: client.team, element: <h1>team</h1> },
       { path: client.reporting, element: <h1>team</h1> },
       { path: client.contacts, element: <h1>contacts</h1> },
-      { path: client.search, element: <Filter /> },
+      { path: client.search, element: <SearchPage /> },
     ],
   },
   {

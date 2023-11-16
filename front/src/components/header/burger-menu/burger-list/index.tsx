@@ -1,16 +1,8 @@
-import { Link } from 'react-router-dom';
 import clsx from 'clsx';
+import { Link } from 'react-router-dom';
 
-type burgerLink = {
-  name: string;
-  href: string;
-};
+import { IBurgerList } from './types';
 
-interface IBurgerList {
-  text: string;
-  className?: string;
-  links: burgerLink[];
-}
 export const BurgerList = ({ className, links, text }: IBurgerList) => {
   return (
     <div className={clsx(className, `max-w-[172px] w-full`)}>

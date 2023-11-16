@@ -1,17 +1,15 @@
 import clsx from 'clsx';
 
-import { Search } from '@/components';
-import { SocialMedia } from '@/components/social-media';
+import { Search, SocialMedia } from '@/components';
 
 import { BurgerNav } from './burger-nav';
 
-export const BurgerMenu = ({
-  className,
-  isBurgerActive,
-}: {
+interface IBurgerMenu {
   className?: string;
   isBurgerActive: boolean;
-}) => {
+}
+
+export const BurgerMenu = ({ className, isBurgerActive }: IBurgerMenu) => {
   return (
     <div
       className={clsx(

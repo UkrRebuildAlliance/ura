@@ -7,8 +7,10 @@ import { BurgerBtn } from '../burger-btn';
 import { BurgerList } from '../burger-list';
 
 export const BurgerNav = ({}) => {
-  const [activeBtn, setActiveBtn] = useState<number>(-1);
   const { t } = useTranslation();
+
+  const [activeBtn, setActiveBtn] = useState<number>(-1);
+
   return (
     <>
       <div className=" flex flex-col max-w-[300px] laptop:max-w-full w-full self-start gap-7 laptop:hidden">

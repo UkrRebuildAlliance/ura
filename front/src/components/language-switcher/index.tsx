@@ -1,6 +1,7 @@
-import i18n from '@/i18n';
 import clsx from 'clsx';
 import Cookies from 'js-cookie';
+
+import i18n from '@/i18n';
 
 export const LanguageSwitcher = ({ className }: { className?: string }) => {
   const activeLanguage = Cookies.get('i18next');

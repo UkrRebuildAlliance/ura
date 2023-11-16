@@ -1,23 +1,9 @@
-import { Dispatch, SetStateAction } from 'react';
-import { Link } from 'react-router-dom';
 import clsx from 'clsx';
+import { Link } from 'react-router-dom';
 
 import Arrow from '@/assets/svg/arrowDown.svg?react';
 
-type burgerLink = {
-  name: string;
-  href: string;
-};
-
-interface IBurgerBtn {
-  btnId: number;
-  text: string;
-  href?: string;
-  activeBtn: number;
-  className?: string;
-  links?: burgerLink[];
-  onClick?: Dispatch<SetStateAction<number>>;
-}
+import { IBurgerBtn } from './types';
 
 export const BurgerBtn = ({
   text,

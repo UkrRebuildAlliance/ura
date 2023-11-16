@@ -1,16 +1,15 @@
 import { ChangeEvent, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import clsx from 'clsx';
+import { useNavigate } from 'react-router-dom';
 
 import SearchIcon from '@/assets/svg/social/search.svg?react';
 
-export const Search = ({
-  className,
-  isPurple,
-}: {
+interface ISearch {
   className?: string;
   isPurple?: boolean;
-}) => {
+}
+
+export const Search = ({ className, isPurple }: ISearch) => {
   const navigate = useNavigate();
   const [search, setSearch] = useState('');
 
