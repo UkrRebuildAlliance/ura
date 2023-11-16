@@ -42,7 +42,7 @@ export const Header = () => {
           <div className="flex items-center justify-between desktop:pb-[26px] desktop:border-b border-[#ffffff65]">
             <LanguageSwitcher className="desktop:hidden" />
 
-            <SocialMedia className="hidden desktop:flex" />
+            <SocialMedia className="hidden desktop:flex desktop:gap-[65px]" />
 
             <Logo />
 
