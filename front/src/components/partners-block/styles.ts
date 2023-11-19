@@ -16,7 +16,7 @@ export const getStyles = (matt?: boolean) => {
     'flex items-center justify-center w-full rounded-[20px] overflow-hidden',
   );
 
-  const img = clsx('flex object-cover w-full h-full', {
+  const img = clsx('flex object-cover w-full h-full desktop:aspect-[1.497/1]', {
     'tablet:aspect-[1/1.1]': !matt,
   });
 
