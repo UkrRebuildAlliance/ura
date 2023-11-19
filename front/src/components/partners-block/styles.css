@@ -1,0 +1,15 @@
+.box-matt::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  z-index: 2;
+  background: linear-gradient(114deg, #483bc9 -0.12%, #8a58b7 99.77%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+}
