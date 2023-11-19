@@ -32,4 +32,13 @@ export const en = {
     content3:
       'We create and implement the most comfortable complexes in the best eco-locations',
   },
+  buns_banner: {
+    title: 'Areas of Alliance activity',
+    diagram: 'Developing community development strategies.',
+    search_buns: 'We are looking for investment developer.s',
+    idea: 'We develop and deliver training and awareness programmes.',
+    lists: 'We research recovery processes and technologies',
+    buns_case: 'We make investing in Ukraine transparent and secure.',
+    percent: 'We help communities find new financial instruments.',
+  },
 };

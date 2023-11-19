@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { MainBannerCard } from './main-banner-card';
 import { EffectFade, Autoplay } from 'swiper/modules';
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
@@ -12,7 +11,7 @@ import { banners } from './config';
 
 export const MainBanner = ({ className }: { className?: string }) => {
   return (
-    <div className={clsx('laptop:pt-8 laptop:px-5', className)}>
+    <div tabIndex={-1} className={clsx('laptop:pt-8 laptop:px-5 ', className)}>
       <Swiper
         effect="fade"
         speed={3300}

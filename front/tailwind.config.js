@@ -10,13 +10,21 @@ export default {
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
       },
+      fontSize: {
+        title: '24px',
+        titleTab: '30px',
+        titleDesk: '52px',
+      },
       colors: {
         borderP: '#483BC9',
         blueBlack: '#1A1035',
+        bunsBorder: 'rgba(255, 255, 255, 0.64)',
+        bunsBorder1: 'rgba(255, 255, 255, 0.84)',
       },
       backgroundImage: {
-        mainGradient: 'linear-gradient(91deg, #483BC9 1.96%, #8A58B7 100%);',
         svgGradient: 'linear-gradient(135deg, #483BC9 0%, #8A58B7 100%);',
+        bunsGradient: 'linear-gradient(114deg, #483BC9 0%, #8A58B7 100%);',
+        mainGradient: 'linear-gradient(91deg, #483BC9 1.96%, #8A58B7 100%);',
         mainBanner:
           'linear-gradient(180deg, #483BC9 0%, #9108FC 48.96%, #F0F600 100%);',
       },

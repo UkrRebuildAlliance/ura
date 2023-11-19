@@ -1,9 +1,10 @@
-import { MainBanner } from '@/components';
+import { BunsBanner, MainBanner } from '@/components';
 
-export const HomePage = ({}) => {
+export const HomePage = () => {
   return (
     <>
       <MainBanner />
+      <BunsBanner />
     </>
   );
 };
