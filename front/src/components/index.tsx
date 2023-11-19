@@ -5,6 +5,7 @@ export { Header } from './header';
 export { LanguageSwitcher } from './language-switcher';
 export { Logo } from './logo';
 export { MainBanner } from './main-banner';
+export { PartnersBlock } from './partners-block';
 export { ProtectedRoute } from './protected-route';
 export { Search } from './search';
 export { SocialMedia } from './social-media';
