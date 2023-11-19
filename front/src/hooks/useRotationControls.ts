@@ -7,7 +7,7 @@ interface RotationControls {
   handleClick: (changeDeg: number) => void;
 }
 
-interface IUseRotationControls {
+export interface IUseRotationControls {
   initialDeg: number;
   maxIterations?: number;
   startDirection?: 'up' | 'down';

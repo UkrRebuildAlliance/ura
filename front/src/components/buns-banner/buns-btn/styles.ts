@@ -2,7 +2,7 @@ import clsx from 'clsx';
 
 export const getStyles = (className?: string) => ({
   btn: clsx(
-    `relative w-[60px] h-[60px] group bg-mainGradient rounded-full cursor-pointer shadow-md shadow-borderP active:scale-90 transition duration-150) `,
+    `relative w-[60px] h-[60px] group bg-mainGradient rounded-full cursor-pointer shadow-md shadow-borderP enabled:active:scale-90 transition duration-150 disabled:grayscale-[60%])`,
     className,
   ),
   after: clsx(
