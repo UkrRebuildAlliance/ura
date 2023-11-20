@@ -10,3 +10,4 @@ export { ProtectedRoute } from './protected-route';
 export { Search } from './search';
 export { SocialMedia } from './social-media';
 export { SocialSvg } from './social-svg';
+export { SliderBtn } from './slider-button';

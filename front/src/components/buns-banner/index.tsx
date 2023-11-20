@@ -7,9 +7,9 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { SliderBtn } from '@/components';
 
-import { bunsCards } from './config';
-import { BunsBtn } from './buns-btn';
+import { bunsCards, buttonsConfig } from './config';
 import { BunsCard } from './buns-card';
 
 interface IBunsBanner {
@@ -66,9 +66,9 @@ export const BunsBanner = ({ className }: IBunsBanner) => {
         </Swiper>
 
         <div className="tablet:flex mx-auto gap-[120px] max-w-fit hidden">
-          <BunsBtn left className="buns-prev" />
+          <SliderBtn buttonsConfig={buttonsConfig} left className="buns-prev" />
 
-          <BunsBtn className="buns-next" />
+          <SliderBtn buttonsConfig={buttonsConfig} className="buns-next" />
         </div>
       </div>
 

@@ -5,6 +5,9 @@ import buns_case from '@/assets/img/case.png';
 import percent from '@/assets/img/percent.png';
 import diagram from '@/assets/img/diagram.png';
 import search_buns from '@/assets/img/search_buns.png';
+import { IUseRotationControls } from '@/hooks/useRotationControls';
+
+import { getRandomNumber } from '../buns-banner/helpers';
 
 const t = (key: string) => i18n.t(key);
 
@@ -37,5 +40,14 @@ export const bunsCards: IBunsCard[] = [
   {
     href: percent,
     content: t('buns_banner.percent'),
+  },
+];
+
+export const buttonsConfig: IUseRotationControls[] = [
+  { initialDeg: getRandomNumber({ min: 113, max: 212 }) },
+  {
+    maxIterations: 6,
+    startDirection: 'down',
+    initialDeg: getRandomNumber({ min: 87, max: 193 }),
   },
 ];

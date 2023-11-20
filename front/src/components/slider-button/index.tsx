@@ -3,17 +3,18 @@ import clsx from 'clsx';
 
 import { useRotationControls } from '@/hooks';
 import Right from '@/assets/svg/right.svg?react';
+import { IUseRotationControls } from '@/hooks/useRotationControls';
 
 import { getStyles } from './styles';
-import { getRandomNumber } from '../helpers';
-import { buttonsConfig } from './config';
+import { getRandomNumber } from '../buns-banner/helpers';
 
 interface IBunsBtn {
   left?: boolean;
   className?: string;
+  buttonsConfig: IUseRotationControls[];
 }
 
-export const BunsBtn = ({ left, className }: IBunsBtn) => {
+export const SliderBtn = ({ left, className, buttonsConfig }: IBunsBtn) => {
   const [first, second] = buttonsConfig;
 
   const { after, before, btn, icon } = getStyles(className);
