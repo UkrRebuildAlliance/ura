@@ -3,7 +3,7 @@ import clsx from 'clsx';
 
 import { useRotationControls } from '@/hooks';
 import Right from '@/assets/svg/right.svg?react';
-import { IUseRotationControls } from '@/hooks/useRotationControls';
+import { IUseRotationControls } from '@/hooks/types';
 
 import { getStyles } from './styles';
 import { getRandomNumber } from '../buns-banner/helpers';

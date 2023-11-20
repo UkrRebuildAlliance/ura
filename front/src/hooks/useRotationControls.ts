@@ -1,17 +1,9 @@
 import { useState } from 'react';
-
-type RotationDirection = 'up' | 'down';
-
-interface RotationControls {
-  deg: number;
-  handleClick: (changeDeg: number) => void;
-}
-
-export interface IUseRotationControls {
-  initialDeg: number;
-  maxIterations?: number;
-  startDirection?: 'up' | 'down';
-}
+import {
+  IUseRotationControls,
+  RotationControls,
+  RotationDirection,
+} from './types';
 
 export const useRotationControls = ({
   startDirection,

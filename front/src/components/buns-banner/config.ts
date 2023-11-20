@@ -4,8 +4,8 @@ import lists from '@/assets/img/lists.png';
 import buns_case from '@/assets/img/case.png';
 import percent from '@/assets/img/percent.png';
 import diagram from '@/assets/img/diagram.png';
+import { IUseRotationControls } from '@/hooks/types';
 import search_buns from '@/assets/img/search_buns.png';
-import { IUseRotationControls } from '@/hooks/useRotationControls';
 
 import { getRandomNumber } from '../buns-banner/helpers';
 

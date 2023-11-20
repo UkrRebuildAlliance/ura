@@ -6,11 +6,11 @@ import { menuLinks } from '../../links';
 import { BurgerBtn } from '../burger-btn';
 import { BurgerList } from '../burger-list';
 
-export const BurgerNav = ({
-  setIsBurgerActive,
-}: {
+interface IBurgerNav {
   setIsBurgerActive: Dispatch<SetStateAction<boolean>>;
-}) => {
+}
+
+export const BurgerNav = ({ setIsBurgerActive }: IBurgerNav) => {
   const { t } = useTranslation();
 
   const [activeBtn, setActiveBtn] = useState<number>(-1);
