@@ -3,7 +3,12 @@ import { Link } from 'react-router-dom';
 
 import { IBurgerList } from './types';
 
-export const BurgerList = ({ className, links, text }: IBurgerList) => {
+export const BurgerList = ({
+  text,
+  links,
+  className,
+  setIsBurgerActive,
+}: IBurgerList) => {
   return (
     <div className={clsx(className, `max-w-[172px] w-full`)}>
       <p className="font-bold capitalize text-transparent bg-mainGradient bg-clip-text font-montserrat text-[26px] mb-16 w-full text-center">
@@ -15,6 +20,9 @@ export const BurgerList = ({ className, links, text }: IBurgerList) => {
           <Link
             to={href}
             key={`${idx}-burger-laptop_${name}`}
+            onClick={() => {
+              setIsBurgerActive(false);
+            }}
             className="capitalize transition duration-150 font-montserrat text-borderP hover:scale-125"
           >
             {name}

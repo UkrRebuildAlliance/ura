@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, Dispatch, SetStateAction } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -6,7 +6,11 @@ import { menuLinks } from '../../links';
 import { BurgerBtn } from '../burger-btn';
 import { BurgerList } from '../burger-list';
 
-export const BurgerNav = ({}) => {
+interface IBurgerNav {
+  setIsBurgerActive: Dispatch<SetStateAction<boolean>>;
+}
+
+export const BurgerNav = ({ setIsBurgerActive }: IBurgerNav) => {
   const { t } = useTranslation();
 
   const [activeBtn, setActiveBtn] = useState<number>(-1);
@@ -16,25 +20,28 @@ export const BurgerNav = ({}) => {
       <div className=" flex flex-col max-w-[300px] laptop:max-w-full w-full self-start gap-7 laptop:hidden">
         <BurgerBtn
           btnId={0}
-          text={t('navbar.activities')}
           activeBtn={activeBtn}
           onClick={setActiveBtn}
           links={menuLinks.activities}
+          text={t('navbar.activities')}
+          setIsBurgerActive={setIsBurgerActive}
         />
 
         <BurgerBtn
           btnId={1}
-          text={t('navbar.about_us')}
           activeBtn={activeBtn}
           onClick={setActiveBtn}
           links={menuLinks.about}
+          text={t('navbar.about_us')}
+          setIsBurgerActive={setIsBurgerActive}
         />
 
         <BurgerBtn
           btnId={3}
-          text={t('navbar.contacts')}
           activeBtn={activeBtn}
           href={menuLinks.contact}
+          text={t('navbar.contacts')}
+          setIsBurgerActive={setIsBurgerActive}
         />
       </div>
 
@@ -42,9 +49,14 @@ export const BurgerNav = ({}) => {
         <BurgerList
           links={menuLinks.activities}
           text={t('navbar.activities')}
+          setIsBurgerActive={setIsBurgerActive}
         />
 
-        <BurgerList text={t('navbar.about_us')} links={menuLinks.about} />
+        <BurgerList
+          links={menuLinks.about}
+          text={t('navbar.about_us')}
+          setIsBurgerActive={setIsBurgerActive}
+        />
 
         <Link
           to={menuLinks.contact}

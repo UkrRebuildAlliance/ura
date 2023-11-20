@@ -1,1 +1,1 @@
-export {};
+export { useRotationControls } from './useRotationControls';

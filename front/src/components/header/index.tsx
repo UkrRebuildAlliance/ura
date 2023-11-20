@@ -34,7 +34,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 w-full pt-[38px] pb-6 z-50">
+      <header className="relative w-full pt-[38px] pb-6 z-[999]">
         <div className="absolute top-0 left-0 w-full h-full bg-mainGradient z-[1]"></div>
 
         <div className="relative max-w-[1620px] mx-auto px-7 tablet:px-10 desktop:px-4 z-[2]">
@@ -60,7 +60,10 @@ export const Header = () => {
         <NavMenu activeLink={activeLink} handleClick={handleClick} />
       </header>
 
-      <BurgerMenu isBurgerActive={isBurgerActive} />
+      <BurgerMenu
+        isBurgerActive={isBurgerActive}
+        setIsBurgerActive={setIsBurgerActive}
+      />
     </>
   );
 };
