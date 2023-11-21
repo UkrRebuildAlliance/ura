@@ -13,12 +13,18 @@ export const getStyles = (matt?: boolean) => {
   );
 
   const imgWrapper = clsx(
-    'flex items-center justify-center w-full rounded-[20px] overflow-hidden',
+    'flex items-center justify-center w-full rounded-20 overflow-hidden',
   );
 
-  const img = clsx('flex object-cover w-full h-full desktop:aspect-[1.497/1]', {
-    'tablet:aspect-[1/1.1]': !matt,
-  });
+  const img = clsx(
+    'flex  w-full h-full desktop:aspect-[1.497/1]',
+    {
+      'tablet:aspect-[1/1.1] object-cover': !matt,
+    },
+    {
+      'object-contain': matt,
+    },
+  );
 
   return {
     img,

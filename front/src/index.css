@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply box-border text-[inherit] font-montserrat leading-[1.5];
+}
+
 .menu {
   --color: #fff;
   width: 44px;

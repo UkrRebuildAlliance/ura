@@ -1,6 +1,6 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
 
 import { menuLinks } from '../../links';
 import { BurgerBtn } from '../burger-btn';
@@ -16,25 +16,25 @@ export const BurgerNav = ({}) => {
       <div className=" flex flex-col max-w-[300px] laptop:max-w-full w-full self-start gap-7 laptop:hidden">
         <BurgerBtn
           btnId={0}
-          text={t('navbar.activities')}
           activeBtn={activeBtn}
           onClick={setActiveBtn}
+          text={t('navbar.activities')}
           links={menuLinks.activities}
         />
 
         <BurgerBtn
           btnId={1}
-          text={t('navbar.about_us')}
           activeBtn={activeBtn}
           onClick={setActiveBtn}
           links={menuLinks.about}
+          text={t('navbar.about_us')}
         />
 
         <BurgerBtn
           btnId={3}
-          text={t('navbar.contacts')}
           activeBtn={activeBtn}
           href={menuLinks.contact}
+          text={t('navbar.contacts')}
         />
       </div>
 

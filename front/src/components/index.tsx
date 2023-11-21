@@ -1,10 +1,12 @@
 export { Button } from './button';
 export { Footer } from './footer';
 export { Header } from './header';
+export { InfoBlock } from './infoBlock';
 export { LanguageSwitcher } from './language-switcher';
 export { Logo } from './logo';
 export { PartnersBlock } from './partners-block';
 export { ProtectedRoute } from './protected-route';
 export { Search } from './search';
+export { LinkViewAll } from './link-view-all';
 export { SocialMedia } from './social-media';
 export { SocialSvg } from './social-svg';

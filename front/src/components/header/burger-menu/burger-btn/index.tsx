@@ -10,9 +10,9 @@ export const BurgerBtn = ({
   href,
   btnId,
   links,
+  onClick,
   activeBtn,
   className,
-  onClick,
   ...props
 }: IBurgerBtn) => {
   const isActive = activeBtn === btnId;

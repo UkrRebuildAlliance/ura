@@ -1,4 +1,5 @@
 export const ua = {
+  readMore: 'Детальніше',
   navbar: {
     activities: 'діяльність',
     about_us: 'про нас',
@@ -20,5 +21,8 @@ export const ua = {
     write_us_title: 'Напишіть',
     social_title: 'Соціальні мережі',
     copyright: 'Авторські права',
+  },
+  links: {
+    viewAll: 'Подивитись все',
   },
 };
