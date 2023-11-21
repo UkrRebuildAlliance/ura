@@ -20,8 +20,12 @@ export default {
         blueBlack: '#1A1035',
         bunsBorder: 'rgba(255, 255, 255, 0.64)',
         bunsBorder1: 'rgba(255, 255, 255, 0.84)',
+        partnersMatt: 'rgba(255, 255, 255, 0.3)',
       },
       backgroundImage: {
+        'partners-sm': "url('./src/assets/img/bg_partner_sm.png')",
+        'partners-md': "url('./src/assets/img/bg_partner_md.png')",
+        'partners-lg': "url('./src/assets/img/bg_partner_lg.png')",
         svgGradient: 'linear-gradient(135deg, #483BC9 0%, #8A58B7 100%);',
         bunsGradient: 'linear-gradient(114deg, #483BC9 0%, #8A58B7 100%);',
         mainGradient: 'linear-gradient(91deg, #483BC9 1.96%, #8A58B7 100%);',

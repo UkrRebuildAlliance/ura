@@ -41,4 +41,7 @@ export const en = {
     buns_case: 'We make investing in Ukraine transparent and secure.',
     percent: 'We help communities find new financial instruments.',
   },
+  partners: {
+    title: 'Partners',
+  },
 };

@@ -11,7 +11,13 @@ import { banners } from './config';
 
 export const MainBanner = ({ className }: { className?: string }) => {
   return (
-    <div tabIndex={-1} className={clsx('laptop:pt-8 laptop:px-5 ', className)}>
+    <section
+      tabIndex={-1}
+      className={clsx(
+        'laptop:pt-8 laptop:px-5 pt-6 desktop:pt-[100px] ',
+        className,
+      )}
+    >
       <Swiper
         effect="fade"
         speed={3300}
@@ -30,6 +36,6 @@ export const MainBanner = ({ className }: { className?: string }) => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </section>
   );
 };
