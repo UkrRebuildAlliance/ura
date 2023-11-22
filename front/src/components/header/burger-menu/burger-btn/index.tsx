@@ -62,7 +62,9 @@ export const BurgerBtn = ({
                     to={href}
                     key={`${idx}-mobile-burger-${name}`}
                     onClick={() => {
-                      if (onClick) onClick(-1);
+                      if (onClick) {
+                        onClick(-1);
+                      }
                       setIsBurgerActive(false);
                     }}
                     className="font-medium capitalize transition duration-200 font-montserrat text-borderP text-4 hover:scale-110"

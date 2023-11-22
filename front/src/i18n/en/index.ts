@@ -1,4 +1,5 @@
 export const en = {
+  readMore: 'Read more',
   navbar: {
     activities: 'activities',
     about_us: 'about us',
@@ -20,6 +21,9 @@ export const en = {
     write_us_title: 'Write to us',
     social_title: 'Social networks',
     copyright: 'Copyright',
+  },
+  links: {
+    viewAll: 'View all',
   },
   main_banners_cards: {
     ttl1: 'The population is the main beneficiary of the country',
