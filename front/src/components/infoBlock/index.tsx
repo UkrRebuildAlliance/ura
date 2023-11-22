@@ -39,7 +39,7 @@ export const InfoBlock = ({
           <h2 className="font-bold text-center">{title}</h2>
 
           <Link
-            to={to ? to : '#'}
+            to={to && !team ? to : '#'}
             className="flex flex-col items-center w-full h-full gap-7"
           >
             <div className="flex items-center justify-center min-w-[260px] w-full h-[calc(100% / 2)] overflow-hidden rounded-20">

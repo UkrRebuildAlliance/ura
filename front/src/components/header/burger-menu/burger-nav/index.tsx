@@ -22,7 +22,6 @@ export const BurgerNav = ({ setIsBurgerActive }: IBurgerNav) => {
           btnId={0}
           activeBtn={activeBtn}
           onClick={setActiveBtn}
-          text={t('navbar.activities')}
           links={menuLinks.activities}
           text={t('navbar.activities')}
           setIsBurgerActive={setIsBurgerActive}
