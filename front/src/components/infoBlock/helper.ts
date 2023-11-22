@@ -18,12 +18,12 @@ export const getStyles = (team?: boolean) => {
   );
 
   const imgBlock = clsx(
-    'flex items-center justify-center overflow-hidden rounded-20',
+    'flex items-center justify-center min-w-[400px] overflow-hidden rounded-20',
     {
-      'min-w-[400px] h-[334px]': !team,
+      'h-[334px]': !team,
     },
     {
-      'min-w-[400px] h-[380px]': team,
+      'h-[380px]': team,
     },
   );
 
