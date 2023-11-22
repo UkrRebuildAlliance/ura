@@ -13,16 +13,18 @@ export const BurgerBtn = ({
   onClick,
   activeBtn,
   className,
+  setIsBurgerActive,
   ...props
 }: IBurgerBtn) => {
   const isActive = activeBtn === btnId;
 
   const handelClick = () => {
-    if (isActive && onClick) {
-      onClick(-1);
-    }
+    if (onClick) {
+      if (isActive) {
+        onClick(-1);
+        return;
+      }
 
-    if (!isActive && onClick) {
       onClick(btnId);
     }
   };
@@ -57,8 +59,14 @@ export const BurgerBtn = ({
               {links &&
                 links.map(({ name, href }, idx) => (
                   <Link
+                    to={href}
                     key={`${idx}-mobile-burger-${name}`}
-                    to={`${href}-${idx}`}
+                    onClick={() => {
+                      if (onClick) {
+                        onClick(-1);
+                      }
+                      setIsBurgerActive(false);
+                    }}
                     className="font-medium capitalize transition duration-200 font-montserrat text-borderP text-4 hover:scale-110"
                   >
                     {name}

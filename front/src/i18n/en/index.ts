@@ -25,4 +25,24 @@ export const en = {
   links: {
     viewAll: 'View all',
   },
+  main_banners_cards: {
+    ttl1: 'The population is the main beneficiary of the country',
+    ttl2: 'Every Ukrainian is important to us',
+    ttl3: 'Together we will build our country',
+    content1:
+      'Our mission is to create conditions for Ukrainians to return home.',
+    content2:
+      'Improving the pension programme. Benefits and special programmes for pensioners',
+    content3:
+      'We create and implement the most comfortable complexes in the best eco-locations',
+  },
+  buns_banner: {
+    title: 'Areas of Alliance activity',
+    diagram: 'Developing community development strategies.',
+    search_buns: 'We are looking for investment developer.s',
+    idea: 'We develop and deliver training and awareness programmes.',
+    lists: 'We research recovery processes and technologies',
+    buns_case: 'We make investing in Ukraine transparent and secure.',
+    percent: 'We help communities find new financial instruments.',
+  },
 };

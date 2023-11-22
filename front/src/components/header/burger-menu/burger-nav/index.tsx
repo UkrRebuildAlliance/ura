@@ -1,12 +1,16 @@
+import { useState, Dispatch, SetStateAction } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { useState } from 'react';
 
 import { menuLinks } from '../../links';
 import { BurgerBtn } from '../burger-btn';
 import { BurgerList } from '../burger-list';
 
-export const BurgerNav = ({}) => {
+interface IBurgerNav {
+  setIsBurgerActive: Dispatch<SetStateAction<boolean>>;
+}
+
+export const BurgerNav = ({ setIsBurgerActive }: IBurgerNav) => {
   const { t } = useTranslation();
 
   const [activeBtn, setActiveBtn] = useState<number>(-1);
@@ -20,6 +24,8 @@ export const BurgerNav = ({}) => {
           onClick={setActiveBtn}
           text={t('navbar.activities')}
           links={menuLinks.activities}
+          text={t('navbar.activities')}
+          setIsBurgerActive={setIsBurgerActive}
         />
 
         <BurgerBtn
@@ -28,6 +34,7 @@ export const BurgerNav = ({}) => {
           onClick={setActiveBtn}
           links={menuLinks.about}
           text={t('navbar.about_us')}
+          setIsBurgerActive={setIsBurgerActive}
         />
 
         <BurgerBtn
@@ -35,6 +42,7 @@ export const BurgerNav = ({}) => {
           activeBtn={activeBtn}
           href={menuLinks.contact}
           text={t('navbar.contacts')}
+          setIsBurgerActive={setIsBurgerActive}
         />
       </div>
 
@@ -42,9 +50,14 @@ export const BurgerNav = ({}) => {
         <BurgerList
           links={menuLinks.activities}
           text={t('navbar.activities')}
+          setIsBurgerActive={setIsBurgerActive}
         />
 
-        <BurgerList text={t('navbar.about_us')} links={menuLinks.about} />
+        <BurgerList
+          links={menuLinks.about}
+          text={t('navbar.about_us')}
+          setIsBurgerActive={setIsBurgerActive}
+        />
 
         <Link
           to={menuLinks.contact}
