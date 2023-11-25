@@ -6,7 +6,7 @@ interface IMainBannerCard {
 
 export const MainBannerCard = ({ href, ttl, content }: IMainBannerCard) => {
   return (
-    <div className="relative flex flex-col-reverse w-full px-[30px] gap-4 items-center sm:flex-row sm:justify-center pt-[50px] laptop:pb-[20px] desktop:justify-evenly desktop:max-w-[1620px] desktop:mx-auto desktop:gap-10">
+    <div className="relative flex flex-col-reverse w-full px-[30px] gap-4 items-center sm:flex-row sm:justify-center laptop:pb-[20px] desktop:justify-evenly desktop:max-w-[1620px] desktop:mx-auto desktop:gap-10">
       <div className="hidden laptop:block  desktop:h-[160px] laptop:h-[74px] laptop:w-[74px] desktop:w-[160px] bg-[#F0F600] absolute top-0 left-0" />
 
       <div className="hidden laptop:block top-[82px] laptop:left-1/3 desktop:left-1/2 laptop:translate-x-[20%] desktop:-translate-x-[70%] laptop:h-[75px] laptop:w-[155px]  desktop:h-[157px] desktop:w-[320px] bg-[#CECCFE] absolute z-0 rounded-bl-full rounded-br-full" />

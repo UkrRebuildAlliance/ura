@@ -22,15 +22,15 @@ export const BunsBanner = ({ className }: IBunsBanner) => {
   return (
     <section
       className={clsx(
-        'max-w-[1620px] mx-auto buns-banner py-[50px] tablet:py-[60px] desktop:pt-[140px] desktop:pb-[85px]',
+        'max-w-[1620px] tablet:px-[100px] desktop:p-0 mx-auto  buns-banner py-[50px] tablet:py-[60px] desktop:pt-[140px] desktop:pb-[85px]',
         className,
       )}
     >
-      <h3 className="px-3 font-bold text-center text-black font-montserrat text-title tablet:text-titleTab desktop:text-titleDesk mb-[30px] tablet:mb-[50px] desktop:mb-[100px]">
+      <h3 className=" font-bold px-[10px] desktop:pl-8 min-[1770px]:pl-0 tablet:px-0 text-center tablet:text-left text-black font-montserrat text-title tablet:text-titleTab desktop:text-titleDesk mb-[30px] tablet:mb-[50px] desktop:mb-[100px]">
         {t('buns_banner.title')}
       </h3>
 
-      <div className="px-3">
+      <div className="px-[30px] tablet:px-0">
         <Swiper
           grabCursor
           loop={true}
@@ -50,7 +50,7 @@ export const BunsBanner = ({ className }: IBunsBanner) => {
           }}
           modules={[Autoplay, Pagination, Navigation]}
           breakpoints={{
-            500: {
+            560: {
               slidesPerView: 2,
             },
             900: {
@@ -66,7 +66,7 @@ export const BunsBanner = ({ className }: IBunsBanner) => {
         </Swiper>
 
         <div className="tablet:flex mx-auto gap-[120px] max-w-fit hidden">
-          <SliderBtn buttonsConfig={buttonsConfig} left className="buns-prev" />
+          <SliderBtn left buttonsConfig={buttonsConfig} className="buns-prev" />
 
           <SliderBtn buttonsConfig={buttonsConfig} className="buns-next" />
         </div>

@@ -5,7 +5,7 @@ export const routes = {
     news_id: '/news/:newsId',
     partner: '/partners',
     project: '/projects',
-    project_id: '/project/:projectId',
+    project_id: '/projects/:projectId',
     researches: '/researches',
     researches_id: '/researches/:researchesId',
     company_history: '/history',
