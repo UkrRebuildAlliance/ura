@@ -37,7 +37,7 @@ export const Header = () => {
       <header className="relative w-full pt-[38px] pb-6 z-[999]">
         <div className="absolute top-0 left-0 w-full h-full bg-mainGradient z-[1]"></div>
 
-        <div className="relative max-w-[1620px] mx-auto px-7 tablet:px-10 desktop:px-4 z-[2]">
+        <div className="relative max-w-[1620px] mx-auto px-7 tablet:px-10 desktop:px-4 z-[2] desktopLg:px-0">
           <div className="flex items-center justify-between desktop:pb-[26px] desktop:border-b border-[#ffffff65]">
             <LanguageSwitcher className="desktop:hidden" />
 

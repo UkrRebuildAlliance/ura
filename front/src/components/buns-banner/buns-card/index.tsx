@@ -5,7 +5,7 @@ interface IBunsCard {
 
 export const BunsCard = ({ href, content }: IBunsCard) => {
   return (
-    <div className="flex flex-col items-center justify-start bg-bunsGradient h-[230px] desktop:h-[337px] max-w-[500px] w-full rounded-[20px] desktop:rounded-[44px]  pb-4">
+    <div className="flex flex-col select-none items-center justify-start bg-bunsGradient h-[230px] desktop:h-[337px] max-w-[500px] w-full rounded-[20px] desktop:rounded-[44px]  pb-4">
       <div className="flex ">
         <img
           src={href}
