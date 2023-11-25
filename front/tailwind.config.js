@@ -21,11 +21,13 @@ export default {
         bunsBorder: 'rgba(255, 255, 255, 0.64)',
         bunsBorder1: 'rgba(255, 255, 255, 0.84)',
         partnersMatt: 'rgba(255, 255, 255, 0.3)',
+        crumbsText: '#474747',
       },
       backgroundImage: {
         'partners-sm': "url('./src/assets/img/bg_partner_sm.png')",
         'partners-md': "url('./src/assets/img/bg_partner_md.png')",
         'partners-lg': "url('./src/assets/img/bg_partner_lg.png')",
+        blue_logo: "url('./src/assets/img/blue_logo.png')",
         svgGradient: 'linear-gradient(135deg, #483BC9 0%, #8A58B7 100%);',
         bunsGradient: 'linear-gradient(114deg, #483BC9 0%, #8A58B7 100%);',
         mainGradient: 'linear-gradient(91deg, #483BC9 1.96%, #8A58B7 100%);',
@@ -41,7 +43,10 @@ export default {
         // => @media (min-width: 1024px) { ... }
 
         desktop: '1366px',
-        // => @media (min-width: 1280px) { ... }
+        // => @media (min-width: 1366px) { ... }
+
+        desktopLg: '1720px',
+        // => @media (min-width: 1720px) { ... }
       },
     },
   },

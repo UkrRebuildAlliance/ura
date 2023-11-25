@@ -12,3 +12,6 @@ export { Search } from './search';
 export { SliderBtn } from './slider-button';
 export { SocialMedia } from './social-media';
 export { SocialSvg } from './social-svg';
+export { Breadcrumbs } from './breadcrumbs';
+export { PageTitle } from './page-title';
+export { partners } from './mock';

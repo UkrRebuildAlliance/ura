@@ -66,7 +66,7 @@ export const BunsBanner = ({ className }: IBunsBanner) => {
         </Swiper>
 
         <div className="tablet:flex mx-auto gap-[120px] max-w-fit hidden">
-          <SliderBtn buttonsConfig={buttonsConfig} className="buns-prev" />
+          <SliderBtn left buttonsConfig={buttonsConfig} className="buns-prev" />
 
           <SliderBtn buttonsConfig={buttonsConfig} className="buns-next" />
         </div>

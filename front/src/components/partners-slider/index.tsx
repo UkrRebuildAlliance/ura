@@ -19,7 +19,7 @@ export const PartnersSlider = ({ className, partners }: IPartnerSlider) => {
         )}
       >
         <h3 className=" font-bold desktop:pl-8 min-[1770px]:pl-0 tablet:px-0 text-center tablet:text-left text-black font-montserrat text-title tablet:text-titleTab desktop:text-titleDesk mb-[30px] tablet:mb-[50px] desktop:mb-[85px]">
-          {t('partners.title')}
+          {t('partners_slider.title')}
         </h3>
       </div>
 

@@ -1,6 +1,4 @@
-import { BunsBanner, MainBanner, PartnersSlider } from '@/components';
-
-import { partners } from './moksPrtners';
+import { BunsBanner, MainBanner, PartnersSlider, partners } from '@/components';
 
 export const HomePage = () => {
   return (

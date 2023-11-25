@@ -41,7 +41,28 @@ export const en = {
     buns_case: 'We make investing in Ukraine transparent and secure.',
     percent: 'We help communities find new financial instruments.',
   },
-  partners: {
+  partners_slider: {
     title: 'Partners',
+  },
+  partners_page: {
+    title: 'Our partners',
+    connect: 'Become a partner',
+    main_content: {
+      first:
+        'During our work with the Alliance, more than 10 Ukrainian and international organisations have signed memoranda.',
+      second:
+        'You can become a partner of the Alliance because our future is born in synthesis and close cooperation.',
+    },
+  },
+  crumbs: {
+    home: 'home',
+    news: 'news',
+    partners: 'partners',
+    projects: 'projects',
+    researches: 'researches',
+    team: 'team',
+    reporting: 'reporting',
+    history: 'history',
+    contacts: 'contacts',
   },
 };

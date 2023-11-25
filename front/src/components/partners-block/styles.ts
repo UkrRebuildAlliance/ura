@@ -4,7 +4,7 @@ export const getStyles = (matt?: boolean) => {
   const wrapper = clsx(
     'relative  flex items-center select-none justify-center w-[264px] h-[280px] min-w-[200px] tablet:max-w-[264px] tablet:h-[280px] desktop:max-w-[500px] desktop:h-[334px] rounded-[20px]',
     {
-      'box-matt backdrop-blur-[10px] before:p-0.5 p-[55px] tablet:py-[75px] tablet:px-[35px] desktop:py-[74px] desktop:px-[114px]':
+      'box-matt backdrop-blur-[35px] before:p-0.5 p-[55px] tablet:py-[75px] tablet:px-[35px] desktop:py-[74px] desktop:px-[114px]':
         matt,
     },
     {
@@ -14,7 +14,7 @@ export const getStyles = (matt?: boolean) => {
   );
 
   const imgWrapper = clsx(
-    'flex items-center justify-center w-full rounded-[20px] overflow-hidden',
+    'flex items-center justify-center w-full overflow-hidden',
   );
 
   const img = clsx('flex object-cover w-full h-full', {
