@@ -34,6 +34,7 @@ export default {
         mainGradient: 'linear-gradient(91deg, #483BC9 1.96%, #8A58B7 100%);',
         mainBanner:
           'linear-gradient(180deg, #483BC9 0%, #9108FC 48.96%, #F0F600 100%);',
+        pgGradient: 'linear-gradient(114deg, #483bc9 -0.12%, #8a58b7 99.77%)',
       },
       screens: {
         sm: '576px',

@@ -1,7 +1,8 @@
 import { isResponsive } from '@/hooks';
 import { ChildrenProps } from '@/types';
 
-const { isMobile, isNotMobile, isTablet, isLaptop, isDesktop } = isResponsive;
+const { isMobile, isNotMobile, isTablet, isTabletUp, isLaptop, isDesktop } =
+  isResponsive;
 
 export const Mobile = ({ children }: ChildrenProps) => {
   return isMobile() ? children : null;
@@ -13,6 +14,10 @@ export const NotMobile = ({ children }: ChildrenProps) => {
 
 export const Tablet = ({ children }: ChildrenProps) => {
   return isTablet() ? children : null;
+};
+
+export const TabletUp = ({ children }: ChildrenProps) => {
+  return isTabletUp() ? children : null;
 };
 
 export const Laptop = ({ children }: ChildrenProps) => {

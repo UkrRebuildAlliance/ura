@@ -14,6 +14,11 @@ export const isTablet = () =>
     maxWidth: laptopMinWidth - 1,
   });
 
+export const isTabletUp = () =>
+  useMediaQuery({
+    minWidth: tabletMinWidth,
+  });
+
 export const isLaptop = () =>
   useMediaQuery({
     minWidth: laptopMinWidth,
