@@ -2,14 +2,7 @@ import clsx from 'clsx';
 import { useLocation } from 'react-router-dom';
 
 import { Crumb } from './crumb';
-
-type IAcc = {
-  [key: string]: string;
-};
-
-interface IBreadcrumbs {
-  className?: string;
-}
+import { IAcc, IBreadcrumbs } from './types';
 
 export const Breadcrumbs = ({ className }: IBreadcrumbs) => {
   const { pathname } = useLocation();
@@ -34,17 +27,15 @@ export const Breadcrumbs = ({ className }: IBreadcrumbs) => {
         className,
       )}
     >
-      {slicedCrumbs.map(({ name, path }, idx) => {
-        return (
-          <Crumb
-            idx={idx}
-            name={name}
-            path={path}
-            key={`crumbs-${name}-${idx}`}
-            crumbsLng={crumbs.length}
-          />
-        );
-      })}
+      {slicedCrumbs.map(({ name, path }, idx) => (
+        <Crumb
+          idx={idx}
+          name={name}
+          path={path}
+          key={`crumbs-${name}-${idx}`}
+          crumbsLng={crumbs.length}
+        />
+      ))}
     </div>
   );
 };

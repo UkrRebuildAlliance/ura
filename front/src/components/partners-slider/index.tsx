@@ -45,8 +45,8 @@ export const PartnersSlider = ({ className, partners }: IPartnerSlider) => {
           {partners.map(({ src }, idx) => (
             <SwiperSlide key={`main-partner-slider-${idx}`}>
               <PartnersBlock
-                src={src}
                 matt
+                src={src}
                 className="w-[260px] h-inherit desktop:h-inherit desktop:w-full"
               />
             </SwiperSlide>
