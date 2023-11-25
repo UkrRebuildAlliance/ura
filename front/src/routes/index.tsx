@@ -3,10 +3,10 @@ import { createBrowserRouter } from 'react-router-dom';
 import { routes } from '@/constants';
 import { ProtectedRoute } from '@/components';
 import {
+  HomePage,
   Dashboard,
   SearchPage,
   LayoutClient,
-  HomePage,
   PartnersPage,
 } from '@/pages';
 
