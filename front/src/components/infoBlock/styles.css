@@ -1,0 +1,25 @@
+.text-gradient {
+  background: #483bc9;
+  background: linear-gradient(to right, #483bc9 0%, #8a58b7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-ellipsis {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.line-clamp-6 {
+  -webkit-line-clamp: 6;
+}
+
+.line-clamp-8 {
+  -webkit-line-clamp: 8;
+}
+
+.line-clamp-12 {
+  -webkit-line-clamp: 12;
+}

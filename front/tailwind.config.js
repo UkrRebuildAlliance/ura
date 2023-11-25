@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
+const { responsive } = require('./src/constants');
 const defaultTheme = require('tailwindcss/defaultConfig');
 
 export default {
@@ -36,17 +37,17 @@ export default {
       },
       screens: {
         sm: '576px',
-        tablet: '768px',
-        // => @media (min-width: 640px) { ... }
 
-        laptop: '1024px',
-        // => @media (min-width: 1024px) { ... }
+        tablet: `${responsive.tabletMinWidth}px`, // '768px',
 
-        desktop: '1366px',
-        // => @media (min-width: 1366px) { ... }
+        laptop: `${responsive.laptopMinWidth}px`, // '1024px',
 
-        desktopLg: '1720px',
-        // => @media (min-width: 1720px) { ... }
+        desktop: `${responsive.desktopMinWidth}px`, // '1366px',
+
+        desktopLg: '1720px', // '1720px',
+      },
+      borderRadius: {
+        20: '20px',
       },
     },
   },
