@@ -58,6 +58,12 @@ export const en = {
         'You can become a partner of the Alliance because our future is born in synthesis and close cooperation.',
     },
   },
+  news_page: {
+    title: 'News',
+  },
+  teams_page: {
+    title: 'Teams',
+  },
   crumbs: {
     home: 'home',
     news: 'news',

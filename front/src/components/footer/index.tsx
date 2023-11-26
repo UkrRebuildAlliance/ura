@@ -42,7 +42,7 @@ export const Footer = () => {
           <div className="flex flex-col items-center gap-5 text-center text-white font-montserrat tablet:w-full desktop:max-w-max desktop:text-start">
             <h6 className="w-full font-semibold">{t('footer.social_title')}</h6>
 
-            <SocialMedia className="gap-[24px] text" />
+            <SocialMedia className="gap-[22px] text" />
           </div>
         </div>
 
