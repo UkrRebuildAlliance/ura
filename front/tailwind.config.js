@@ -23,6 +23,7 @@ export default {
         bunsBorder1: 'rgba(255, 255, 255, 0.84)',
         partnersMatt: 'rgba(255, 255, 255, 0.3)',
         crumbsText: '#474747',
+        newsBlock: '#E2E1FF',
       },
       backgroundImage: {
         'partners-sm': "url('./src/assets/img/bg_partner_sm.png')",
