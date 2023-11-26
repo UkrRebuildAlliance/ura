@@ -9,7 +9,7 @@ export const TeamsBlock = ({}) => {
 
   return (
     <section>
-      <div className="px-[30px] py-[34px] tablet:px-[100px] desktop:pt-[64px] desktop:pb-[115px] desktopLg:px-0 max-w-[1620px] mx-auto">
+      <div className="px-[30px] py-[34px] tablet:px-[100px] tablet:pt-[100px] desktop:pt-[64px] desktop:pb-[115px] desktopLg:px-0 max-w-[1620px] mx-auto">
         <div className=" flex justify-between items-center mb-[30px] tablet:mb-[50px] desktop:mb-[100px]">
           <h3 className="w-full mx-auto tablet:mx-0 tablet:w-max font-bold px-[10px] desktop:pl-8 min-[1770px]:pl-0 tablet:px-0 text-center tablet:text-left text-black font-montserrat text-title tablet:text-titleTab desktop:text-titleDesk ">
             {t('teams_page.title')}
