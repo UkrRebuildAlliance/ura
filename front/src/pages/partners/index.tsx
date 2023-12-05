@@ -10,18 +10,22 @@ import {
 
 export const PartnersPage = ({}) => {
   const { t } = useTranslation();
+
   return (
     <>
       <div className="pt-[30px] tablet:pt-[60px] pb-[100px] tablet:pb-[120px] desktop:pb-[150px] px-[30px] tablet:px-[100px] desktopLg:px-0 desktopLg:max-w-[1620px] desktopLg:mx-auto">
         <Breadcrumbs />
+
         <PageTitle
           text={t('partners_page.title')}
           className="mb-10 tablet:mb-[70px] desktop:mb-[128px]"
         />
+
         <div className="flex flex-col gap-8 tablet:gap-[44px] desktop:gap-[60px] mb-[50px] tablet:mb-[70px]">
           <p className="font-medium font-montserrat text-[18px] text-black tablet:text-[24px] desktop:text-[36px] desktop:font-semibold">
             {t('partners_page.main_content.first')}
           </p>
+
           <p className="font-medium font-montserrat text-[18px] text-black tablet:text-[24px] desktop:text-[36px] desktop:font-semibold">
             {t('partners_page.main_content.second')}
           </p>

@@ -3,6 +3,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import { routes } from '@/constants';
 import { ProtectedRoute } from '@/components';
 import {
+  NewById,
   HomePage,
   Dashboard,
   SearchPage,
@@ -19,7 +20,7 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       { path: client.news, element: <h1>news</h1> },
-      { path: client.news_id, element: <h1>news/id =</h1> },
+      { path: client.news_id, element: <NewById /> },
       { path: client.partner, element: <PartnersPage /> },
       { path: client.project, element: <h1>Project</h1> },
       { path: client.project_id, element: <h1>Project ID</h1> },
