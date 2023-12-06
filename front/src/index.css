@@ -5,116 +5,122 @@
 @tailwind utilities;
 
 * {
-  @apply box-border text-[inherit] font-montserrat leading-[1.5];
+    @apply box-border text-[inherit] font-montserrat leading-[1.5];
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .menu {
-  --color: #fff;
-  width: 44px;
-  height: 36px;
-  padding: 0;
-  margin: 0;
-  outline: none;
-  position: relative;
-  border: none;
-  background: none;
-  cursor: pointer;
-  -webkit-appearence: none;
-  -webkit-tap-highlight-color: transparent;
+    --color: #1a1035;
+    width: 44px;
+    height: 36px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    position: relative;
+    border: none;
+    background: none;
+    cursor: pointer;
+    -webkit-appearence: none;
+    -webkit-tap-highlight-color: transparent;
 }
 .menu svg {
-  width: 64px;
-  height: 48px;
-  top: -6px;
-  left: -14px;
-  stroke: var(--color);
-  stroke-width: 4px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  fill: none;
-  display: block;
-  position: absolute;
+    width: 64px;
+    height: 48px;
+    top: -6px;
+    left: -14px;
+    stroke: var(--color);
+    stroke-width: 4px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    display: block;
+    position: absolute;
 }
 .menu svg path {
-  transition:
-    stroke-dasharray var(--duration, 0.4s) var(--easing, ease) var(--delay, 0s),
-    stroke-dashoffset var(--duration, 0.4s) var(--easing, ease) var(--delay, 0s);
-  stroke-dasharray: var(--array-1, 26px) var(--array-2, 100px);
-  stroke-dashoffset: var(--offset, 126px);
-  transform: translateZ(0);
+    transition:
+        stroke-dasharray var(--duration, 0.4s) var(--easing, ease)
+            var(--delay, 0s),
+        stroke-dashoffset var(--duration, 0.4s) var(--easing, ease)
+            var(--delay, 0s);
+    stroke-dasharray: var(--array-1, 26px) var(--array-2, 100px);
+    stroke-dashoffset: var(--offset, 126px);
+    transform: translateZ(0);
 }
 .menu svg path:nth-child(2) {
-  --duration: 0.4s;
-  --easing: ease-in;
-  --offset: 100px;
-  --array-2: 74px;
+    --duration: 0.4s;
+    --easing: ease-in;
+    --offset: 100px;
+    --array-2: 74px;
 }
 .menu svg path:nth-child(3) {
-  --offset: 133px;
-  --array-2: 107px;
+    --offset: 133px;
+    --array-2: 107px;
 }
 
 .menu.active svg path {
-  --offset: 57px;
+    --offset: 57px;
 }
 .menu.active svg path:nth-child(1),
 .menu.active svg path:nth-child(3) {
-  --delay: 0.15s;
-  --easing: cubic-bezier(0.2, 0.4, 0.2, 1.1);
+    --delay: 0.15s;
+    --easing: cubic-bezier(0.2, 0.4, 0.2, 1.1);
 }
 .menu.active svg path:nth-child(2) {
-  --duration: 0.4s;
-  --offset: 1.5px;
-  --array-1: 1px;
+    --duration: 0.4s;
+    --offset: 1.5px;
+    --array-1: 1px;
 }
 .menu.active svg path:nth-child(3) {
-  --offset: 58px;
+    --offset: 58px;
 }
 
 .burger-overflow {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 @media screen and (min-width: 1366px) {
-  .burger-overflow {
-    overflow: auto;
-  }
+    .burger-overflow {
+        overflow: auto;
+    }
 }
 
 .buns-banner .swiper-pagination-bullet {
-  position: relative;
-  width: 16px;
-  height: 16px;
-  border-radius: 100%;
-  opacity: 0.6;
-  background: linear-gradient(
-    180deg,
-    rgba(206, 204, 254, 0.3) 0%,
-    rgba(72, 59, 201, 0.3) 48.96%,
-    rgba(206, 204, 254, 0.3) 100%
-  );
-  transition: all 0.15s ease-in;
-  cursor: pointer;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    opacity: 0.6;
+    background: linear-gradient(
+        180deg,
+        rgba(206, 204, 254, 0.3) 0%,
+        rgba(72, 59, 201, 0.3) 48.96%,
+        rgba(206, 204, 254, 0.3) 100%
+    );
+    transition: all 0.15s ease-in;
+    cursor: pointer;
 }
 
 .buns-banner .swiper-pagination-bullet-active {
-  opacity: 1;
-  transform: scale(1.25);
+    opacity: 1;
+    transform: scale(1.25);
 }
 .buns-banner .swiper-pagination-bullet::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 50px;
-  padding: 2px;
-  z-index: 2;
-  background: linear-gradient(180deg, #ceccfe 0%, #483bc9 60%, #ceccfe 100%);
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    padding: 2px;
+    z-index: 2;
+    background: linear-gradient(180deg, #ceccfe 0%, #483bc9 60%, #ceccfe 100%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
 }

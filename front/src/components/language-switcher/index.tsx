@@ -4,23 +4,45 @@ import Cookies from 'js-cookie';
 import i18n from '@/i18n';
 
 export const LanguageSwitcher = ({ className }: { className?: string }) => {
-  const activeLanguage = Cookies.get('i18next');
-  const changedLng = activeLanguage === 'ua' ? 'ua' : 'en';
+    const activeLanguage = Cookies.get('i18next');
 
-  const changing = () => {
-    i18n.changeLanguage(activeLanguage === 'ua' ? 'en' : 'ua');
-    location.reload();
-  };
+    const changeLng = (lng: string) => {
+        i18n.changeLanguage(lng);
+        location.reload();
+    };
 
-  return (
-    <span
-      onClick={changing}
-      className={clsx(
-        'text-white desktop:text-[20px] desktop:font-normal tablet:text-[32px] tablet:font-semibold select-none -tracking-[2px] uppercase cursor-pointer font-montserrat text-[27px] font-normal',
-        className,
-      )}
-    >
-      {changedLng}
-    </span>
-  );
+    return (
+        <div
+            className={clsx(
+                'flex items-center gap-[6px] uppercase text-[38px] laptop:text-[38px] desktop:text-[20px] font-light text-inactive',
+                className,
+            )}
+        >
+            <span
+                onClick={() => changeLng('ua')}
+                className={clsx(
+                    'cursor-pointer w-[58px] desktop:w-[36px] flex items-center justify-center duration-300 transition-all',
+                    {
+                        'text-blueBlack font-medium': activeLanguage === 'ua',
+                    },
+                )}
+            >
+                ua
+            </span>
+
+            <span className="select-none">/</span>
+
+            <span
+                onClick={() => changeLng('en')}
+                className={clsx(
+                    'cursor-pointer w-[58px] desktop:w-[36px] flex items-center justify-center duration-300 transition-all',
+                    {
+                        'text-blueBlack font-medium': activeLanguage === 'en',
+                    },
+                )}
+            >
+                en
+            </span>
+        </div>
+    );
 };

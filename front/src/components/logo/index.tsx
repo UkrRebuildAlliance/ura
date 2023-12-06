@@ -1,29 +1,41 @@
 import clsx from 'clsx';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-import logo from '@/assets/img/logo.png';
+import header from '@/assets/img/blue_logo.png';
+import footer from '@/assets/img/logo.png';
 
-export const Logo = ({ className }: { className?: string }) => {
-  const { pathname } = useLocation();
-  const navigate = useNavigate();
+interface ILogo {
+    className?: string;
+    isFooter?: boolean;
+}
 
-  const handleClick = () => {
-    if (pathname === '/') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else {
-      navigate('/');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  };
+export const Logo = ({ className, isFooter }: ILogo) => {
+    const navigate = useNavigate();
+    const { pathname } = useLocation();
 
-  return (
-    <div
-      onClick={handleClick}
-      style={{ backgroundImage: `url(${logo})` }}
-      className={clsx(
-        'w-[120.0008px] h-[49px] tablet:w-[211.9992px] tablet:h-[49.9992px] bg-contain bg-no-repeat bg-center cursor-pointer',
-        className,
-      )}
-    />
-  );
+    const handleClick = () => {
+        if (pathname === '/') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+            navigate('/');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    };
+
+    return (
+        <div
+            onClick={handleClick}
+            style={{ backgroundImage: `url(${isFooter ? footer : header})` }}
+            className={clsx(
+                'bg-contain bg-no-repeat bg-center cursor-pointer',
+                className,
+                {
+                    'w-[254px] h-[60px] laptop:w-[210px] laptop:h-[50px] desktop:w-[254px] desktop:h-[60px]':
+                        isFooter,
+                    'w-[102px] h-[24px] laptop:w-[170px] laptop:h-[40px]':
+                        !isFooter,
+                },
+            )}
+        />
+    );
 };
