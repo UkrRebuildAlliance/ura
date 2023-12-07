@@ -36,7 +36,7 @@ const PaginationMain = ({
               return (
                 <li
                   key={key}
-                  className="relative flex items-end justify-center w-8 h-8 pb-1 select-none sm:w-10 sm:h-10 pagination-text pagination-circle"
+                  className="relative flex items-end justify-center w-8 h-8 pb-1 border select-none sm:w-10 sm:h-10 text-borderP border-borderP rounded-20"
                 >
                   &hellip;
                 </li>
@@ -47,9 +47,9 @@ const PaginationMain = ({
                 key={key}
                 onClick={() => onPageChange(pageNumber as number)}
                 className={clsx(
-                  'relative flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full cursor-pointer pagination-circle',
+                  'flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full cursor-pointer border border-borderP',
                   {
-                    'bg-pgGradient': pageNumber === currentPage,
+                    'bg-borderP': pageNumber === currentPage,
                   },
                 )}
               >
@@ -60,7 +60,7 @@ const PaginationMain = ({
                       ' text-white': pageNumber === currentPage,
                     },
                     {
-                      'pagination-text': pageNumber !== currentPage,
+                      'text-borderP': pageNumber !== currentPage,
                     },
                   )}
                 >
