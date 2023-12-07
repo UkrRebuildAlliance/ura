@@ -1,6 +1,8 @@
+export { Br } from './br';
 export { Breadcrumbs } from './breadcrumbs';
 export { BunsBanner } from './buns-banner';
 export { Button } from './button';
+export { ContentText } from './content-text';
 export { Footer } from './footer';
 export { Header } from './header';
 export { InfoBlock } from './infoBlock';

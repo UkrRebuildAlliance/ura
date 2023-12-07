@@ -24,7 +24,7 @@ const Pagination = ({
       <button
         onClick={onPrevious}
         disabled={currentPage === 1}
-        className="disabled:select-none disabled:opacity-30"
+        className="disabled:select-none disabled:opacity-30 tablet:[&>svg]:w-[40px] tablet:[&>svg]:h-[40px]"
       >
         <ChevronLeft />
       </button>
@@ -33,7 +33,7 @@ const Pagination = ({
       <button
         onClick={onNext}
         disabled={currentPage === totalPageCount}
-        className="disabled:select-none disabled:opacity-30"
+        className="disabled:select-none disabled:opacity-30 tablet:[&>svg]:w-[40px] tablet:[&>svg]:h-[40px]"
       >
         <ChevronRight />
       </button>
