@@ -4,8 +4,8 @@ import {
     BunsBanner,
     MainBanner,
     TeamsBlock,
-    PartnersSlider,
     AreasActivity,
+    PartnersSlider,
 } from '@/components';
 import decor from '@/assets/img/decorm_center_home.png';
 
