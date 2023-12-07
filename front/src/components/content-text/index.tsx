@@ -14,7 +14,7 @@ export const ContentText = ({ content, className }: ContentTextProps) => {
         return (
           <p
             key={`new-by-id-${idx}`}
-            className="font-montserrat text-xs leading-[18px] text-blueBlack tablet:text-[18px] tablet:leading-[27px] desktop:text-[20px] desktop:leading-[30px] desktop:font-semibold"
+            className="font-montserrat text-xs leading-[18px] tablet:text-[18px] tablet:leading-[27px] desktop:text-[20px] desktop:leading-[30px] desktop:font-semibold"
           >
             {text}
           </p>

@@ -37,7 +37,7 @@ export default {
           'linear-gradient(180deg, #483BC9 0%, #9108FC 48.96%, #F0F600 100%);',
         pgGradient: 'linear-gradient(114deg, #483bc9 -0.12%, #8a58b7 99.77%)',
         brGradient:
-          'linear-gradient(90deg, #CECCFE 0%, #8957B7 23.44%, #483BC9 47.36%, #8957B7 75.52%, #CECCFE 100%);',
+          'linear-gradient(90deg, #1A1035 28.12%, #483BC9 73.96%, #826CFF 86.46%, #CECCFE 100%);',
       },
       screens: {
         sm: '576px',
