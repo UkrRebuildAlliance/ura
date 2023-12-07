@@ -1,3 +1,4 @@
+export { AreasActivity } from './areas-activity';
 export { Breadcrumbs } from './breadcrumbs';
 export { BunsBanner } from './buns-banner';
 export { Button } from './button';
@@ -7,7 +8,7 @@ export { InfoBlock } from './infoBlock';
 export { LanguageSwitcher } from './language-switcher';
 export { LinkViewAll } from './link-view-all';
 export { Logo } from './logo';
-export { MainBanner } from './main-banner';
+export { MainBanner } from './new-main-banner';
 export { NewsBlock } from './news-block';
 export { PageContainer } from './page-container';
 export { PageTitle } from './page-title';

@@ -9,7 +9,7 @@ export const LayoutClient = () => {
 
             <Header />
 
-            <main className="w-full min-h-[calc(100vh-268px)]">
+            <main className="w-full min-h-[calc(100vh-268px)] pt-[98px] laptop:pt-[136px] desktop:pt-[156px]">
                 <Outlet />
             </main>
 

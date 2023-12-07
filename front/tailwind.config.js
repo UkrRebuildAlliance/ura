@@ -31,6 +31,8 @@ export default {
                 'partners-sm': "url('./src/assets/img/bg_partner_sm.png')",
                 'partners-md': "url('./src/assets/img/bg_partner_md.png')",
                 'partners-lg': "url('./src/assets/img/bg_partner_lg.png')",
+                homeBanner: "url('./src/assets/img/home_banner_lg.png')",
+                homeBanner_sm: "url('./src/assets/img/home_banner_sm.png')",
                 blue_logo: "url('./src/assets/img/blue_logo.png')",
                 svgGradient:
                     'linear-gradient(135deg, #483BC9 0%, #8A58B7 100%);',
