@@ -2,7 +2,6 @@ import clsx from 'clsx';
 
 import { DOTS, usePagination } from '@/hooks';
 
-import './style.css';
 import { PaginationMainProps } from './types';
 
 const PaginationMain = ({
@@ -42,6 +41,7 @@ const PaginationMain = ({
                 </li>
               );
             }
+
             return (
               <li
                 key={key}
