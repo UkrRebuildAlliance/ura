@@ -1,8 +1,9 @@
 import { createBrowserRouter } from 'react-router-dom';
 
 import { routes } from '@/constants';
-import { Breadcrumbs, ProtectedRoute } from '@/components';
+import { ProtectedRoute } from '@/components';
 import {
+    NewById,
     HomePage,
     NewsPage,
     Dashboard,
@@ -20,7 +21,7 @@ export const router = createBrowserRouter([
         children: [
             { index: true, element: <HomePage /> },
             { path: client.news, element: <NewsPage /> },
-            { path: client.news_id, element: <Breadcrumbs></Breadcrumbs> },
+            { path: client.news_id, element: <NewById /> },
             { path: client.partner, element: <PartnersPage /> },
             { path: client.project, element: <h1>Project</h1> },
             { path: client.project_id, element: <h1>Project ID</h1> },

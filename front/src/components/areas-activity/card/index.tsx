@@ -6,7 +6,7 @@ interface ICard {
 export const Card = ({ img, text }: ICard) => {
     return (
         <div className="flex gap-[18px] max-w-[100%] w-full items-start justify-center md:max-w-[48%] desktop:justify-between desktop:gap-[55px]">
-            <div className="relative bg-borderP aspect-square rounded-bl-full w-[30%]">
+            <div className="relative bg-borderP aspect-square rounded-bl-[170px] w-[30%]">
                 <img
                     src={img}
                     alt="activity"

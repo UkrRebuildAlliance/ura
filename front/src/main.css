@@ -5,11 +5,7 @@
 @tailwind utilities;
 
 * {
-    @apply box-border text-[inherit] font-montserrat leading-[1.5];
-}
-
-html {
-    scroll-behavior: smooth;
+    @apply box-border text-[inherit] font-montserrat leading-[1.5] text-blueBlack;
 }
 
 .menu {
@@ -49,12 +45,14 @@ html {
     stroke-dashoffset: var(--offset, 126px);
     transform: translateZ(0);
 }
+
 .menu svg path:nth-child(2) {
     --duration: 0.4s;
     --easing: ease-in;
     --offset: 100px;
     --array-2: 74px;
 }
+
 .menu svg path:nth-child(3) {
     --offset: 133px;
     --array-2: 107px;
@@ -63,16 +61,19 @@ html {
 .menu.active svg path {
     --offset: 57px;
 }
+
 .menu.active svg path:nth-child(1),
 .menu.active svg path:nth-child(3) {
     --delay: 0.15s;
     --easing: cubic-bezier(0.2, 0.4, 0.2, 1.1);
 }
+
 .menu.active svg path:nth-child(2) {
     --duration: 0.4s;
     --offset: 1.5px;
     --array-1: 1px;
 }
+
 .menu.active svg path:nth-child(3) {
     --offset: 58px;
 }
@@ -107,6 +108,7 @@ html {
     opacity: 1;
     transform: scale(1.25);
 }
+
 .buns-banner .swiper-pagination-bullet::before {
     content: '';
     position: absolute;
