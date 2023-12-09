@@ -11,7 +11,7 @@ export const PageTitle = ({
     news,
     text,
     className,
-    align = 'center',
+    align = 'left',
 }: IPageTitle) => {
     const style = clsx(
         'tablet:text-[40px] font-bold leading-[140%]',
@@ -21,9 +21,9 @@ export const PageTitle = ({
             'text-center': align === 'center',
         },
         { 'text-[18px] desktop:text-[50px] font-extrabold': news },
-        { 'text-[24px] desktop:text-[70px]': !news },
+        { 'text-[24px] laptop:text-[30px] desktop:text-[52px]': !news },
         className,
     );
 
-    return <h1 className={style}>{text}</h1>;
+    return <h3 className={style}>{text}</h3>;
 };

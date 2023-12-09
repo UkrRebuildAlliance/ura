@@ -24,3 +24,4 @@ export { SliderBtn } from './slider-button';
 export { SocialMedia } from './social-media';
 export { SocialSvg } from './social-svg';
 export { TeamsBlock } from './team-block';
+export { TitleContainer } from './title-container';

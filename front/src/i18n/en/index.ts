@@ -24,6 +24,7 @@ export const en = {
     },
     links: {
         viewAll: 'View all',
+        viewAllTeam: 'View all',
     },
     main_banner: {
         ttl: 'The Ukraine Recovery Alliance - is the main provider of international assistance.',

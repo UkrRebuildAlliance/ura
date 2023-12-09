@@ -1,8 +1,9 @@
 import { useTranslation } from 'react-i18next';
 
+import { PageContainer, PageTitle, TitleContainer } from '@/components';
+
 import { Card } from './card';
 import { bunsCards } from './config';
-import { PageContainer, PageTitle } from '..';
 
 export const AreasActivity = ({}) => {
     const { t } = useTranslation();
@@ -10,10 +11,9 @@ export const AreasActivity = ({}) => {
     return (
         <section>
             <PageContainer>
-                <PageTitle
-                    text={t('buns_banner.title')}
-                    className="mb-[30px] laptop:mb-[50px] desktop:mb-[100px]"
-                />
+                <TitleContainer>
+                    <PageTitle text={t('buns_banner.title')} />
+                </TitleContainer>
 
                 <div className="flex flex-wrap gap-[20px] justify-between sm:gap-[40px_20px] md:gap-[50px_20px] desktop:gap-[40px_20px]">
                     {bunsCards.map((card, idx) => (
