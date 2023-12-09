@@ -49,7 +49,7 @@ export const InfoBlock = ({
             <div className="flex items-center justify-center min-w-[280px] overflow-hidden rounded-20 mb-8 tablet:mb-6">
               <img
                 src={img}
-                alt="image"
+                alt="new_image"
                 className="object-cover aspect-[1.29/1]"
               />
             </div>
@@ -83,7 +83,7 @@ export const InfoBlock = ({
           <div className="flex items-center justify-center min-w-[400px] max-w-[400px] w-full h-full overflow-hidden rounded-20">
             <img
               src={img}
-              alt="image"
+              alt="new_image"
               className="flex object-cover w-full h-full aspect-[1/0.83]"
             />
           </div>
