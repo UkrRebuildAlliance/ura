@@ -5,16 +5,16 @@ import { Autoplay, Navigation } from 'swiper/modules';
 
 import { routes } from '@/constants';
 import {
-    LinkViewAll,
-    PageContainer,
     PageTitle,
+    LinkViewAll,
+    PartnersCard,
+    PageContainer,
     TitleContainer,
 } from '@/components';
 
 import './style.css';
 import { breakPoints } from './config';
 import { IPartnerSlider } from './types';
-import { PartnersCard } from '../new-partner-card';
 
 export const PartnersSlider = ({ className, partners }: IPartnerSlider) => {
     const { t } = useTranslation();

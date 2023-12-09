@@ -10,6 +10,7 @@ export const routes = {
         researches_id: '/researches/:researchesId',
         company_history: '/history',
         team: '/team',
+        team_id: '/team/:teamId',
         reporting: '/reporting',
         contacts: '/contacts',
         search: '/search',
