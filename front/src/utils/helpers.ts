@@ -26,5 +26,6 @@ export const quantityCard = () => {
       setQuantity(quantitySwitch(window.innerWidth));
     });
   });
+
   return quantity;
 };

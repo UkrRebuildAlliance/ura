@@ -15,13 +15,17 @@ export const LinkViewAll = ({ to, className }: LinkViewAllProps) => {
   return (
     <Link
       to={to}
-      className={clsx('flex items-center gap-4 w-fit group', className)}
+      className={`flex items-center gap-[18px] w-fit group ${
+        className ? className : ''
+      }`}
     >
       <span className="text-[12px] font-semibold tablet:text-[16px] laptop:text-[24px] transition-all duration-300 group-hover:scale-105">
         {t('links.viewAll')}
       </span>
 
-      <ArrowLong />
+      <div className="flex items-center w-[72px] h-[40px] justify-center border border-blueBlack rounded-[40px]">
+        <ArrowLong />
+      </div>
     </Link>
   );
 };

@@ -23,7 +23,7 @@ export const ua = {
     copyright: 'Авторські права',
   },
   links: {
-    viewAll: 'Подивитись все',
+    viewAll: 'Подивитись всi',
   },
   main_banners_cards: {
     ttl1: 'Населення — головний бенефіціар країни',
