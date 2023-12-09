@@ -24,6 +24,10 @@ export const Laptop = ({ children }: ChildrenProps) => {
   return isLaptop() ? children : null;
 };
 
+export const NotDesktop = ({ children }: ChildrenProps) => {
+  return !isDesktop() ? children : null;
+};
+
 export const Desktop = ({ children }: ChildrenProps) => {
   return isDesktop() ? children : null;
 };
