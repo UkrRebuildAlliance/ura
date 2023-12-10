@@ -4,12 +4,11 @@ import { routes } from '@/constants';
 import {
     news,
     PageTitle,
+    RenderInfo,
     LinkViewAll,
     PageContainer,
     TitleContainer,
 } from '@/components';
-
-import { GetData } from './helper';
 
 export const NewsBlock = ({}) => {
     const { t } = useTranslation();
@@ -26,7 +25,7 @@ export const NewsBlock = ({}) => {
                     />
                 </TitleContainer>
 
-                <GetData shortVersion news={news} to={routes.client.news} />
+                <RenderInfo shortVersion news={news} to={routes.client.news} />
             </PageContainer>
         </section>
     );

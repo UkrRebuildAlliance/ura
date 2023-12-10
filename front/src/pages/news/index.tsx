@@ -1,8 +1,10 @@
 import { useState } from 'react';
 
+import { routes } from '@/constants';
 import {
-    PageTitle,
+    news,
     Pagination,
+    RenderInfo,
     Breadcrumbs,
     PageContainer,
 } from '@/components';
@@ -11,8 +13,6 @@ export const NewsPage = ({}) => {
     const [activePage, setActivePage] = useState<number>(1);
 
     const onPageChange = (page: number) => {
-        console.log(1);
-
         setActivePage(page);
     };
 
@@ -20,20 +20,15 @@ export const NewsPage = ({}) => {
         <PageContainer>
             <Breadcrumbs />
 
-            <PageTitle text="News" />
+            <RenderInfo news={news} to={routes.client.news} />
 
             <Pagination
                 pageSize={3}
                 totalCount={27}
-                siblingCount={1}
                 currentPage={activePage}
                 onPageChange={onPageChange}
-                className="mx-auto max-w-max"
+                className="mx-auto max-w-max pt-[40px] laptop:pt-[50px] desktop:pt-[140px]"
             />
-
-            <span className="stroke-[10px] stroke-black font-montserrat text-[150px] text-red-500">
-                Andrey
-            </span>
         </PageContainer>
     );
 };

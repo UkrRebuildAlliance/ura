@@ -1,9 +1,8 @@
 import { quantityCard } from '@/utils/helpers';
-
-import { InfoBlock, LinkViewAll } from '..';
+import { InfoBlock, LinkViewAll } from '@/components';
 
 interface GetDataProps {
-    to: string;
+    to?: string;
     news: {
         id: string;
         src: string;
@@ -14,7 +13,7 @@ interface GetDataProps {
     shortVersion?: boolean;
 }
 
-export const GetData = ({ news, shortVersion, to }: GetDataProps) => {
+export const RenderInfo = ({ news, shortVersion, to }: GetDataProps) => {
     return (
         <>
             <div className="flex flex-col gap-10 tablet:gap-10 tablet:flex-row tablet:flex-wrap laptop:justify-between desktop:gap-[100px_10px] desktopLg:gap-[100px_60px]">
@@ -36,7 +35,7 @@ export const GetData = ({ news, shortVersion, to }: GetDataProps) => {
                 })}
             </div>
 
-            {shortVersion && (
+            {shortVersion && to && (
                 <LinkViewAll to={to} className="pt-8 tablet:hidden" />
             )}
         </>
