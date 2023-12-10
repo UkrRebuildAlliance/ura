@@ -3,66 +3,69 @@ import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 
-import { PartnersBlock, SliderBtn } from '@/components';
+import 'swiper/css';
 
+import { routes } from '@/constants';
+import {
+    PageTitle,
+    LinkViewAll,
+    PartnersCard,
+    PageContainer,
+    TitleContainer,
+} from '@/components';
+
+import './style.css';
+import { breakPoints } from './config';
 import { IPartnerSlider } from './types';
-import { breakPoints, buttonsConfig } from './config';
 
 export const PartnersSlider = ({ className, partners }: IPartnerSlider) => {
-  const { t } = useTranslation();
-  return (
-    <section className="pt-[50px] pb-[90px] tablet:pb-[120px]">
-      <div
-        className={clsx(
-          'max-w-[1620px] tablet:px-[100px] desktop:p-0 mx-auto ',
-          className,
-        )}
-      >
-        <h3 className=" font-bold desktop:pl-8 min-[1770px]:pl-0 tablet:px-0 text-center tablet:text-left text-black font-montserrat text-title tablet:text-titleTab desktop:text-titleDesk mb-[30px] tablet:mb-[50px] desktop:mb-[85px]">
-          {t('partners_slider.title')}
-        </h3>
-      </div>
+    const { t } = useTranslation();
 
-      <div
-        className={`py-9 bg-contain bg-top tablet:pt-[55px] laptop:py-[66px] desktop:mb-[62px] bg-partners-sm tablet:bg-partners-md desktop:bg-partners-lg`}
-      >
-        <Swiper
-          grabCursor
-          loop={true}
-          speed={300}
-          spaceBetween={10}
-          slidesPerView={1.22}
-          centeredSlides={true}
-          allowTouchMove={true}
-          breakpoints={breakPoints}
-          modules={[Autoplay, Navigation]}
-          className="partners-slider max-w-[1620px] mx-auto "
-          navigation={{
-            prevEl: '.partners-prev',
-            nextEl: '.partners-next',
-          }}
-        >
-          {partners.map(({ src }, idx) => (
-            <SwiperSlide key={`main-partner-slider-${idx}`}>
-              <PartnersBlock
-                matt
-                src={src}
-                className="w-[260px] h-inherit desktop:h-inherit desktop:w-full"
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+    return (
+        <section className={clsx('partner-slider', className)}>
+            <PageContainer>
+                <TitleContainer>
+                    <PageTitle text={t('partners_slider.title')} />
 
-      <div className="desktop:flex mx-auto gap-[120px] max-w-fit hidden">
-        <SliderBtn
-          left
-          className="partners-prev"
-          buttonsConfig={buttonsConfig}
-        />
+                    <LinkViewAll
+                        team
+                        to={routes.client.partner}
+                        className="hidden tablet:flex"
+                    />
+                </TitleContainer>
 
-        <SliderBtn buttonsConfig={buttonsConfig} className="partners-next" />
-      </div>
-    </section>
-  );
+                <Swiper
+                    loop={true}
+                    speed={10000}
+                    centeredSlides={true}
+                    allowTouchMove={false}
+                    breakpoints={breakPoints}
+                    modules={[Autoplay, Navigation]}
+                    className="partners-slider mb-[32px] tablet:mb-0"
+                    autoplay={{
+                        delay: 0,
+                        disableOnInteraction: false,
+                    }}
+                >
+                    {partners.map(({ src }, idx) => (
+                        <SwiperSlide key={`main-partner-slider-${idx}`}>
+                            <PartnersCard img={src} />
+                        </SwiperSlide>
+                    ))}
+
+                    {partners.map(({ src }, idx) => (
+                        <SwiperSlide key={`main-partner-slider-${idx}-2`}>
+                            <PartnersCard img={src} />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+
+                <LinkViewAll
+                    team
+                    to={routes.client.partner}
+                    className="tablet:hidden"
+                />
+            </PageContainer>
+        </section>
+    );
 };
