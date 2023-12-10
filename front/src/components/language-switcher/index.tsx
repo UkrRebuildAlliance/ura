@@ -7,6 +7,10 @@ export const LanguageSwitcher = ({ className }: { className?: string }) => {
     const activeLanguage = Cookies.get('i18next');
 
     const changeLng = (lng: string) => {
+        if (activeLanguage === lng) {
+            return;
+        }
+
         i18n.changeLanguage(lng);
         location.reload();
     };
