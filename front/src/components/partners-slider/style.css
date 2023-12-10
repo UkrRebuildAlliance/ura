@@ -2,7 +2,3 @@
     -webkit-transition-timing-function: linear !important;
     transition-timing-function: linear !important;
 }
-
-.partner-slider .swiper-slide img {
-    max-width: 100%;
-}

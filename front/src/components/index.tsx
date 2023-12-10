@@ -21,7 +21,6 @@ export { PartnersSlider } from './partners-slider';
 export { ProtectedRoute } from './protected-route';
 export { Search } from './search';
 export { SectionTeam } from './section-team';
-export { SliderBtn } from './slider-button';
 export { SocialMedia } from './social-media';
 export { SocialSvg } from './social-svg';
 export { TeamsCard } from './teams-card';

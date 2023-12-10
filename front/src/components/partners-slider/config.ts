@@ -1,7 +1,3 @@
-import { IUseRotationControls } from '@/hooks/types';
-
-import { getRandomNumber } from '../buns-banner/helpers';
-
 export const breakPoints = {
     300: {
         spaceBetween: 20,
@@ -13,12 +9,15 @@ export const breakPoints = {
     },
     500: {
         slidesPerView: 1.7,
+        spaceBetween: 20,
     },
     630: {
         slidesPerView: 2.3,
+        spaceBetween: 20,
     },
     768: {
         slidesPerView: 2.5,
+        spaceBetween: 20,
     },
     900: {
         slidesPerView: 3.2,
@@ -30,18 +29,10 @@ export const breakPoints = {
     },
     1500: {
         slidesPerView: 2.5,
+        spaceBetween: 30,
     },
     1620: {
         slidesPerView: 3,
         spaceBetween: 60,
     },
 };
-
-export const buttonsConfig: IUseRotationControls[] = [
-    { initialDeg: getRandomNumber({ min: 0, max: 360 }) },
-    {
-        maxIterations: 6,
-        startDirection: 'down',
-        initialDeg: getRandomNumber({ min: 87, max: 220 }),
-    },
-];
