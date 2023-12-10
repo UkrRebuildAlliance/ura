@@ -2,7 +2,7 @@ import { Breadcrumbs, PageTitle, Br, ContentText } from '@/components';
 
 import { mock } from './config';
 
-export const NewById = ({}) => {
+export const PageById = ({}) => {
     return (
         <div className="max-w-[1620px] mt-7 tablet:mt-[60px] mb-[80px] desktop:mb-[168px] mx-[20px] tablet:mx-[100px] desktopLg:mx-auto">
             <Breadcrumbs />
