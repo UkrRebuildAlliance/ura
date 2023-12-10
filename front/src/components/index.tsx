@@ -19,6 +19,7 @@ export { PartnersBlock } from './partners-block';
 export { PartnersCard } from './new-partner-card';
 export { PartnersSlider } from './partners-slider';
 export { ProtectedRoute } from './protected-route';
+export { RenderInfo } from './render-info';
 export { Search } from './search';
 export { SectionTeam } from './section-team';
 export { SocialMedia } from './social-media';
