@@ -1,7 +1,11 @@
 export { Dashboard } from './dashboard';
+export { DiscoverById } from './discover-by-id';
+export { DiscoverPage } from './discover';
 export { HomePage } from './home';
 export { LayoutClient } from './layout-client';
-export { NewById } from './new-by-id';
+export { NewsById } from './news-by-id';
 export { NewsPage } from './news';
 export { PartnersPage } from './partners';
+export { ProjectById } from './project-by-id';
+export { ProjectPage } from './project';
 export { SearchPage } from './search';

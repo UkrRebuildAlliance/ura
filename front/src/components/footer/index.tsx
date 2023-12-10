@@ -58,7 +58,7 @@ export const Footer = () => {
                 </div>
 
                 <p className="text-white">
-                    {t('footer.copyright')} &copy; 2023 URA{' '}
+                    {t('footer.copyright')} &copy; {new Date().getFullYear()}
                 </p>
             </div>
         </footer>
