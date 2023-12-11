@@ -25,9 +25,7 @@ export const Button = ({
     return (
         <button
             onClick={onClick}
-            className={`${main} ${
-                variant === 'primary-outline' ? 'primary-outline' : ''
-            } ${className ? className : ''}`}
+            className={`${main} ${className ? className : ''}`}
         >
             <span className={span}>{text}</span>
 

@@ -21,9 +21,9 @@ export const PartnersPage = ({}) => {
             </div>
 
             <Button
-                className="max-w-[300px] mb-[70px] tablet:mb-[92px] desktop:mb-[150px]"
                 variant="primary-outline"
                 text={t('partners_page.connect')}
+                className="max-w-[300px]"
             />
 
             <div className="pt-[50px] pb-[112px] laptop:pt-[100px] laptop:pb-[100px] desktopLg:pt-[150px] desktopLg:pb-[186px] flex  gap-[50px_10px] sm:flex-row flex-wrap tablet:gap-[50px_25px] laptop:gap-[50px_30px] desktopLg:tablet:gap-[60px]">

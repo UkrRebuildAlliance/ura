@@ -36,6 +36,8 @@ export default {
                 blue_logo: "url('/src//assets/img/blue_logo.png')",
                 btnGradient:
                     'linear-gradient(90deg, #483BC9 0%, #225FDD 100%);',
+                btnTransparent:
+                    'linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 100%)',
                 btnBgGradient:
                     'linear-gradient(90deg, #483BC9 0.28%, #5CD68D 99.78%);',
                 svgGradient:
