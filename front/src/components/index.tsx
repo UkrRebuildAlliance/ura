@@ -11,6 +11,7 @@ export { LinkViewAll } from './link-view-all';
 export { Logo } from './logo';
 export { MainBanner } from './new-main-banner';
 export { NewsBlock } from './news-block';
+export { PageBanner } from './page-banner';
 export { PageById } from './page-by-id';
 export { PageContainer } from './page-container';
 export { PageTitle } from './page-title';

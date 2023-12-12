@@ -4,16 +4,19 @@ import { routes } from '@/constants';
 import { ProtectedRoute } from '@/components';
 import {
     HomePage,
-    NewsPage,
     NewsById,
+    NewsPage,
+    TeamPage,
     Dashboard,
+    TeamsById,
     SearchPage,
-    ProjectPage,
+    HistoryPage,
     ProjectById,
-    LayoutClient,
-    PartnersPage,
+    ProjectPage,
     DiscoverById,
     DiscoverPage,
+    LayoutClient,
+    PartnersPage,
 } from '@/pages';
 
 const { client, admin, login } = routes;
@@ -31,9 +34,9 @@ export const router = createBrowserRouter([
             { path: client.project_id, element: <ProjectById /> },
             { path: client.discover, element: <DiscoverPage /> },
             { path: client.discover_id, element: <DiscoverById /> },
-            { path: client.company_history, element: <h1>company_history</h1> },
-            { path: client.team, element: <h1>team</h1> },
-            { path: client.team_id, element: <h1>teamId</h1> },
+            { path: client.company_history, element: <HistoryPage /> },
+            { path: client.team, element: <TeamPage /> },
+            { path: client.team_id, element: <TeamsById /> },
             { path: client.reporting, element: <h1>reporting</h1> },
             { path: client.contacts, element: <h1>contacts</h1> },
             { path: client.search, element: <SearchPage /> },
