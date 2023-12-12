@@ -2,10 +2,9 @@ import { useTranslation } from 'react-i18next';
 
 import { ContentText, PageBanner, PageContainer } from '@/components';
 
-import { mock } from './mock';
-
 export const HistoryPage = ({}) => {
     const { t } = useTranslation();
+    console.log();
 
     return (
         <>
@@ -15,7 +14,9 @@ export const HistoryPage = ({}) => {
                 className="bg-historyBanner_sm laptop:bg-historyBanner"
             />
             <PageContainer>
-                <ContentText content={mock} />
+                <ContentText
+                    content={t('history_page', { returnObjects: true })}
+                />
             </PageContainer>
         </>
     );
