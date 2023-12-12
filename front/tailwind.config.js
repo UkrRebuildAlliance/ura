@@ -52,6 +52,8 @@ export default {
                     'linear-gradient(91deg, #483BC9 1.96%, #8A58B7 100%);',
                 primaryGradient:
                     'linear-gradient(90deg, #1A1035 22.9%, #483BC9 70.93%, #826CFF 102.34%, #CECCFE 118.32%);',
+                footerGradient:
+                    'linear-gradient(90deg, #1A1035 0%, #483BC9 70.93%, #826CFF 102.34%, #CECCFE 118.32%)',
                 burgerGradient:
                     'linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 25%)',
                 mainBanner:
