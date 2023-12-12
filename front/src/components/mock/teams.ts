@@ -3,6 +3,24 @@ import tarasenko from './img/tarasenko.png';
 import korolenko from './img/korolenko.png';
 import danilevski from './img/danilevski.png';
 
+export interface TeamMember {
+    id: string;
+    src: string;
+    name: string;
+    about: string;
+    job_title: string;
+}
+
+const duplicateArray = (originalArray: TeamMember[], times: number) => {
+    const newArray = [];
+
+    for (let i = 0; i < times; i++) {
+        newArray.push(...originalArray);
+    }
+
+    return newArray;
+};
+
 export const teams = [
     {
         id: '1',
@@ -33,3 +51,5 @@ export const teams = [
         about: '. 2+ роки на посаді керівника офісу проектного менеджменту в інвестиційній компанії "Бюро інвестиційних програм" та індустріальному парку "NOVO". 10+ років запуску інвестиційних та міжнародних бізнес-проектів, фандрейзингу. 10+ років досвіду в управлінні проектами та HR.',
     },
 ];
+
+export const teams_for_page = duplicateArray(teams, 5);

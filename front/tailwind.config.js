@@ -33,6 +33,10 @@ export default {
                 'partners-lg': "url('/src/assets/img/bg_partner_lg.png')",
                 homeBanner: "url('/src/assets/img/home_banner_lg.png')",
                 homeBanner_sm: "url('/src/assets/img/home_banner_sm.png')",
+                historyBanner: "url('/src/assets/img/banner_history.png')",
+                historyBanner_sm: "url('/src/assets/img/')",
+                teamBanner: "url('/src/assets/img/banner_team.png')",
+                teamBanner_sm: "url('/src/assets/img/banner_team_sm.png')",
                 blue_logo: "url('/src//assets/img/blue_logo.png')",
                 btnGradient:
                     'linear-gradient(90deg, #483BC9 0%, #225FDD 100%);',
