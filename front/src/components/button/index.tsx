@@ -20,13 +20,10 @@ export const Button = ({
     isActive,
     className,
 }: IButton) => {
-    const { main, span } = getStyles({ variant, isActive });
+    const { main, span } = getStyles({ variant, isActive, className });
 
     return (
-        <button
-            onClick={onClick}
-            className={`${main} ${className ? className : ''}`}
-        >
+        <button className={main} onClick={onClick}>
             <span className={span}>{text}</span>
 
             {icon && <div>{icon}</div>}
