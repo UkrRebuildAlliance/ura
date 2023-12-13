@@ -8,6 +8,11 @@
     @apply box-border text-[inherit] font-montserrat leading-[1.5] text-blueBlack;
 }
 
+input,
+textarea {
+    @apply outline-none;
+}
+
 .menu {
     --color: #1a1035;
     width: 44px;
