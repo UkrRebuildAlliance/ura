@@ -9,6 +9,7 @@ import {
     TeamPage,
     Dashboard,
     TeamsById,
+    ErrorPage,
     SearchPage,
     HistoryPage,
     ProjectById,
@@ -18,7 +19,6 @@ import {
     LayoutClient,
     PartnersPage,
     ReportingPage,
-    ErrorPage,
 } from '@/pages';
 
 const { client, admin, login } = routes;
