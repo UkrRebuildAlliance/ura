@@ -85,4 +85,8 @@ export const en = {
         '',
         '"We don`t want the same thing to happen again as with Turkey, do we? That`s why it`s important to record! If it doesn`t happen, it`s not a disaster. But if you can fix a date, it is advisable to fix it," Movchan says.',
     ],
+    reporting_page: {
+        title: 'We work transparently',
+        btn: 'Download report',
+    },
 };

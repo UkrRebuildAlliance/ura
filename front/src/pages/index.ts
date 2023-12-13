@@ -9,6 +9,7 @@ export { NewsPage } from './news';
 export { PartnersPage } from './partners';
 export { ProjectById } from './project-by-id';
 export { ProjectPage } from './project';
+export { ReportingPage } from './reporting';
 export { SearchPage } from './search';
 export { TeamPage } from './team';
 export { TeamsById } from './teams-by-id';
