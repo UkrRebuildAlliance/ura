@@ -9,6 +9,7 @@ import {
     TeamPage,
     Dashboard,
     TeamsById,
+    ErrorPage,
     SearchPage,
     HistoryPage,
     ProjectById,
@@ -26,6 +27,7 @@ export const router = createBrowserRouter([
     {
         path: '/',
         element: <LayoutClient />,
+        errorElement: <ErrorPage />,
         children: [
             { index: true, element: <HomePage /> },
             { path: client.news, element: <NewsPage /> },
