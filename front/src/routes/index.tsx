@@ -18,6 +18,7 @@ import {
     LayoutClient,
     PartnersPage,
     ReportingPage,
+    ErrorPage,
 } from '@/pages';
 
 const { client, admin, login } = routes;
@@ -26,6 +27,7 @@ export const router = createBrowserRouter([
     {
         path: '/',
         element: <LayoutClient />,
+        errorElement: <ErrorPage />,
         children: [
             { index: true, element: <HomePage /> },
             { path: client.news, element: <NewsPage /> },

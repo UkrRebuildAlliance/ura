@@ -89,4 +89,10 @@ export const en = {
         title: 'We work transparently',
         btn: 'Download report',
     },
+    error_page: {
+        message1: 'Oops! Something has gone wrong.',
+        message2: 'Let`s go back to the',
+        message3: 'home page',
+        message4: 'and try again from there',
+    },
 };
