@@ -91,8 +91,8 @@ export const en = {
     },
     error_page: {
         message1: 'Oops! Something has gone wrong.',
-        message2: 'Let`s go back to the',
+        message2: 'Let`s go back to the ',
         message3: 'home page',
-        message4: 'and try again from there',
+        message4: ' and try again from there',
     },
 };

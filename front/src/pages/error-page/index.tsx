@@ -15,9 +15,7 @@ export const ErrorPage = ({}) => {
                 <PageContainer className="flex flex-col items-center gap-[40px] pb-[100px] tablet:pt-[20px] desktop:pt-[0px] desktop:pb-[150px]">
                     <h1 className="text-[128px] font-semibold tablet:text-[300px]">
                         <span className="text-blueBlack">4</span>
-
                         <span className="text-second">0</span>
-
                         <span className="text-third">4</span>
                     </h1>
 
