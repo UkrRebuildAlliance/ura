@@ -7,30 +7,27 @@ import In from '@/assets/svg/social/in.svg?react';
 import Tg from '@/assets/svg/social/tg.svg?react';
 import Inst from '@/assets/svg/social/inst.svg?react';
 
-export const SocialMedia = ({
-  className,
-  withBg,
-}: {
-  className?: string;
-  withBg?: boolean;
-}) => {
-  return (
-    <div className={clsx('flex gap-[54px]', className)}>
-      <SocialSvg href="/news" withBg={withBg}>
-        <Fb />
-      </SocialSvg>
+interface SocialMediaProps {
+    withBg?: boolean;
+    className?: string;
+}
 
-      <SocialSvg href="/news" withBg={withBg}>
-        <Inst />
-      </SocialSvg>
+export const SocialMedia = ({ className, withBg }: SocialMediaProps) => (
+    <div className={clsx('flex', className)}>
+        <SocialSvg href="/news" withBg={withBg}>
+            <Fb />
+        </SocialSvg>
 
-      <SocialSvg href="/news" withBg={withBg}>
-        <Tg />
-      </SocialSvg>
+        <SocialSvg href="/news" withBg={withBg}>
+            <Inst />
+        </SocialSvg>
 
-      <SocialSvg href="/news" withBg={withBg}>
-        <In />
-      </SocialSvg>
+        <SocialSvg href="/news" withBg={withBg}>
+            <Tg />
+        </SocialSvg>
+
+        <SocialSvg href="/news" withBg={withBg}>
+            <In />
+        </SocialSvg>
     </div>
-  );
-};
+);
