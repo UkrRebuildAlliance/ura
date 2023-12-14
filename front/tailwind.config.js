@@ -20,6 +20,8 @@ export default {
                 borderP: '#483BC9',
                 inactive: '#B0B0B0',
                 blueBlack: '#1A1035',
+                second: '#483BC9',
+                third: '#826CFF',
                 bunsBorder: 'rgba(255, 255, 255, 0.64)',
                 bunsBorder1: 'rgba(255, 255, 255, 0.84)',
                 partnersMatt: 'rgba(255, 255, 255, 0.3)',

@@ -2,6 +2,7 @@ export { Contacts } from './contacts';
 export { Dashboard } from './dashboard';
 export { DiscoverById } from './discover-by-id';
 export { DiscoverPage } from './discover';
+export { ErrorPage } from './error-page';
 export { HistoryPage } from './history';
 export { HomePage } from './home';
 export { LayoutClient } from './layout-client';

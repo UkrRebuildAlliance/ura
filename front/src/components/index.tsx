@@ -12,6 +12,7 @@ export { LanguageSwitcher } from './language-switcher';
 export { LinkViewAll } from './link-view-all';
 export { Logo } from './logo';
 export { MainBanner } from './new-main-banner';
+export { Maps } from './maps';
 export { NewsBlock } from './news-block';
 export { PageBanner } from './page-banner';
 export { PageById } from './page-by-id';
