@@ -4,6 +4,7 @@ import { FieldValues, useForm } from 'react-hook-form';
 import { constants } from '@/constants';
 import { formatPhone } from '@/utils/helpers';
 import {
+    Maps,
     Input,
     Button,
     Address,
@@ -36,7 +37,7 @@ export const Contacts = ({}) => {
         <PageContainer>
             <Breadcrumbs />
 
-            <div className="flex flex-col laptop:flex-row gap-[50px] laptop:gap-[90px] desktop:gap-[80px]">
+            <div className="flex flex-col laptop:flex-row gap-[50px] laptop:gap-[90px] desktop:gap-[80px] mb-10 laptop:mb-20 desktop:mb-[100px]">
                 <div className="flex flex-col gap-4 laptop:gap-[58px] desktop:gap-[58px]">
                     <div>
                         <h4 className="mb-3 laptop:text-[18px] desktop:text-[24px] font-semibold leading-tight">
@@ -79,7 +80,7 @@ export const Contacts = ({}) => {
                             {t('footer.social_title')}
                         </h4>
 
-                        <SocialMedia className="gap-[10px] laptop:gap-6 text-white" />
+                        <SocialMedia className="gap-[10px] laptop:gap-6" />
                     </div>
                 </div>
 
@@ -94,7 +95,7 @@ export const Contacts = ({}) => {
                                 <Input
                                     name="firstName"
                                     control={control}
-                                    placeholder="Ім’я/Компанія"
+                                    placeholder={t('inputs.name_contacts')}
                                 />
                                 <Input
                                     name="phone"
@@ -108,17 +109,23 @@ export const Contacts = ({}) => {
                                 />
                             </div>
 
-                            <textarea
-                                id=""
+                            <Input
+                                type="textarea"
                                 name="message"
-                                placeholder="Напишіть своє повідомлення..."
-                                className="min-h-[146px] w-full border-2 border-borderP py-[19px] px-[32px] rounded-20 resize-none"
+                                control={control}
+                                placeholder={t('inputs.message_contacts')}
                             />
+
+                            {/* <textarea
+                                name="message"
+                                placeholder={t('inputs.message_contacts')}
+                                className="min-h-[146px] w-full border-2 border-borderP py-[19px] px-[32px] rounded-20 resize-none"
+                            /> */}
                         </div>
 
                         <Button
                             type="submit"
-                            text="Відправити"
+                            text={t('buttons.send')}
                             variant="primary-outline"
                             disabled={Object.keys(errors)?.length > 0}
                             className="mt-[50px] laptop:mt-10 desktop:mt-20 tablet:max-w-[250px] ml-auto"
@@ -126,6 +133,8 @@ export const Contacts = ({}) => {
                     </form>
                 </div>
             </div>
+
+            <Maps />
         </PageContainer>
     );
 };

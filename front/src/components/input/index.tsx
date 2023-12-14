@@ -26,6 +26,17 @@ export const Input = ({
 
     const styles = getStyles(!!error);
 
+    if (type === 'textarea') {
+        return (
+            <textarea
+                {...rest}
+                {...field}
+                placeholder={placeholder}
+                className="min-h-[146px] grow w-full  border-2 border-borderP py-[19px] px-[32px] rounded-20 resize-none"
+            />
+        );
+    }
+
     return (
         <input
             {...rest}

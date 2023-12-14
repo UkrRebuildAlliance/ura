@@ -1,6 +1,13 @@
 export const ua = {
     readMore: 'Детальніше',
     stillQuestions: 'Звязатись з нами',
+    buttons: {
+        send: 'Відправити',
+    },
+    inputs: {
+        name_contacts: 'Ім’я/Компанія',
+        message_contacts: 'Напишіть своє повідомлення...',
+    },
     navbar: {
         activities: 'діяльність',
         about_us: 'про нас',

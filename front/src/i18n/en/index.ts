@@ -1,6 +1,13 @@
 export const en = {
     readMore: 'Read more',
     stillQuestions: 'Contact us',
+    buttons: {
+        send: 'Send',
+    },
+    inputs: {
+        name_contacts: 'Name/Company',
+        message_contacts: 'Write your message...',
+    },
     navbar: {
         activities: 'activities',
         about_us: 'about us',
