@@ -1,10 +1,22 @@
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 
-import { Button, partners, Breadcrumbs, PageContainer } from '@/components';
-import { PartnersCard } from '@/components/new-partner-card';
+import { routes } from '@/constants';
+import {
+    Button,
+    partners,
+    Breadcrumbs,
+    PartnersCard,
+    PageContainer,
+} from '@/components';
 
 export const PartnersPage = ({}) => {
     const { t } = useTranslation();
+    const navigate = useNavigate();
+
+    const onClick = () => {
+        navigate(routes.client.contacts);
+    };
 
     return (
         <PageContainer>
@@ -21,9 +33,10 @@ export const PartnersPage = ({}) => {
             </div>
 
             <Button
+                onClick={onClick}
                 variant="primary-outline"
-                text={t('partners_page.connect')}
                 className="max-w-[300px]"
+                text={t('partners_page.connect')}
             />
 
             <div className="pt-[50px] pb-[112px] laptop:pt-[100px] laptop:pb-[100px] desktopLg:pt-[150px] desktopLg:pb-[186px] flex  gap-[50px_10px] sm:flex-row flex-wrap tablet:gap-[50px_25px] laptop:gap-[50px_30px] desktopLg:tablet:gap-[60px]">
