@@ -29,3 +29,9 @@ export { SocialMedia } from './social-media';
 export { SocialSvg } from './social-svg';
 export { TeamsCard } from './teams-card';
 export { TitleContainer } from './title-container';
+export {
+    LoginForm,
+    InputAdmin,
+    ButtonAdmin,
+    AdminContainer,
+} from './admins-component';

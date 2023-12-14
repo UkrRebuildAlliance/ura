@@ -10,6 +10,7 @@ import {
     Dashboard,
     TeamsById,
     ErrorPage,
+    LoginPage,
     SearchPage,
     HistoryPage,
     ProjectById,
@@ -47,7 +48,7 @@ export const router = createBrowserRouter([
     },
     {
         path: login,
-        element: <h1>Login</h1>,
+        element: <LoginPage />,
     },
     {
         path: admin.dashboard,

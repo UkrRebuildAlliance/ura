@@ -95,4 +95,8 @@ export const en = {
         message3: 'home page',
         message4: ' and try again from there',
     },
+    login: {
+        title: 'Entrance',
+        login: 'Login',
+    },
 };

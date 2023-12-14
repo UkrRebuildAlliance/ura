@@ -17,6 +17,15 @@ export default {
                 titleDesk: '52px',
             },
             colors: {
+                warning: '#E76971',
+                primary: '#333333',
+                primaryHover: '#afafaf',
+                primaryActive: '#e5e5e5',
+                secondary: '#483BC9',
+                secondaryHover: '#483BC9',
+                secondaryActive: '#403fad',
+                btnWhite: '#F5F5FB',
+                loginBg: '#333333',
                 borderP: '#483BC9',
                 inactive: '#B0B0B0',
                 blueBlack: '#1A1035',
@@ -76,6 +85,9 @@ export default {
             },
             borderRadius: {
                 20: '20px',
+            },
+            boxShadow: {
+                login: `inset 0px 0px 45px 5px rgba(62,62,62,1)`,
             },
         },
     },

@@ -95,4 +95,8 @@ export const ua = {
         message3: 'головну сторінку',
         message4: ' і спробуємо звідти ще раз',
     },
+    login: {
+        title: 'Вхід',
+        login: 'Увійти',
+    },
 };
