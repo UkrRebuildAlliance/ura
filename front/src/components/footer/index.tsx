@@ -56,7 +56,7 @@ export const Footer = () => {
                             {t('footer.social_title')}
                         </h6>
 
-                        <SocialMedia className="gap-[22px] text-rose-500" />
+                        <SocialMedia className="gap-[22px]" isFooter />
                     </div>
                 </div>
 
