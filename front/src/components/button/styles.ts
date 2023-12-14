@@ -1,10 +1,6 @@
 import clsx from 'clsx';
 
-interface IButtonStyles {
-    isActive?: boolean;
-    className?: string;
-    variant: 'primary' | 'primary-outline';
-}
+import { IButtonStyles } from './types';
 
 export const getStyles = ({ variant, isActive, className }: IButtonStyles) => ({
     main: clsx(

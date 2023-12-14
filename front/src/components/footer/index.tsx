@@ -1,6 +1,9 @@
 import { useTranslation } from 'react-i18next';
 
-import { Logo } from '..';
+import { constants } from '@/constants';
+import { formatPhone } from '@/utils/helpers';
+
+import { Address, Logo } from '..';
 import { SocialMedia } from '../social-media';
 
 export const Footer = () => {
@@ -18,7 +21,7 @@ export const Footer = () => {
                         </h6>
 
                         <p className="font-normal text-[14px] text-white">
-                            {t('footer.addresses')}
+                            <Address />
                         </p>
                     </div>
 
@@ -28,10 +31,10 @@ export const Footer = () => {
                         </h6>
 
                         <a
-                            href="tel:+380001232233"
+                            href={`tel:${constants.phone}`}
                             className="font-normal text-[14px] text-white"
                         >
-                            +38(000)123 22 33
+                            {formatPhone(constants.phone)}
                         </a>
                     </div>
 
@@ -41,10 +44,10 @@ export const Footer = () => {
                         </h6>
 
                         <a
-                            href="mailto:Info@ukrainerebuild.com.ua"
+                            href={`mailto:${constants.email}`}
                             className="font-normal text-[14px] text-white"
                         >
-                            Info@ukrainerebuild.com.ua
+                            {constants.email}
                         </a>
                     </div>
 

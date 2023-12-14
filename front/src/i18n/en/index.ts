@@ -1,5 +1,13 @@
 export const en = {
     readMore: 'Read more',
+    stillQuestions: 'Contact us',
+    buttons: {
+        send: 'Send',
+    },
+    inputs: {
+        name_contacts: 'Name/Company',
+        message_contacts: 'Write your message...',
+    },
     navbar: {
         activities: 'activities',
         about_us: 'about us',
@@ -16,7 +24,7 @@ export const en = {
     },
     footer: {
         addresses_title: 'Addresses',
-        addresses: '40 Bazarna Street, Apt. 503, 65048 Odesa, Ukraine',
+        addresses: '40 Bazarna Street, Apt. 503{{br}} 65048 Odesa, Ukraine',
         tel_title: 'Phone number',
         write_us_title: 'Write to us',
         social_title: 'Social networks',

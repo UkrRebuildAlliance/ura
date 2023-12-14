@@ -1,3 +1,4 @@
+export { Address } from './address';
 export { AreasActivity } from './areas-activity';
 export { Br } from './br';
 export { Breadcrumbs } from './breadcrumbs';
@@ -6,6 +7,7 @@ export { ContentText } from './content-text';
 export { Footer } from './footer';
 export { Header } from './new-header';
 export { InfoBlock } from './infoBlock';
+export { Input } from './input';
 export { LanguageSwitcher } from './language-switcher';
 export { LinkViewAll } from './link-view-all';
 export { Logo } from './logo';

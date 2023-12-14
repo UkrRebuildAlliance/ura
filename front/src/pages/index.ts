@@ -1,3 +1,4 @@
+export { Contacts } from './contacts';
 export { Dashboard } from './dashboard';
 export { DiscoverById } from './discover-by-id';
 export { DiscoverPage } from './discover';

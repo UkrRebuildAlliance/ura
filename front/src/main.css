@@ -12,6 +12,11 @@ svg path {
     @apply text-[currentColor];
 }
 
+input,
+textarea {
+    @apply outline-none;
+}
+
 .menu {
     --color: #1a1035;
     width: 44px;
