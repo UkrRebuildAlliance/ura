@@ -110,8 +110,8 @@ export const Contacts = ({}) => {
                             </div>
 
                             <Input
-                                type="textarea"
                                 name="message"
+                                type="textarea"
                                 control={control}
                                 placeholder={t('inputs.message_contacts')}
                             />
