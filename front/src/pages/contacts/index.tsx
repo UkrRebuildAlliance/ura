@@ -115,12 +115,6 @@ export const Contacts = ({}) => {
                                 control={control}
                                 placeholder={t('inputs.message_contacts')}
                             />
-
-                            {/* <textarea
-                                name="message"
-                                placeholder={t('inputs.message_contacts')}
-                                className="min-h-[146px] w-full border-2 border-borderP py-[19px] px-[32px] rounded-20 resize-none"
-                            /> */}
                         </div>
 
                         <Button
