@@ -1,9 +1,8 @@
 import clsx from 'clsx';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ArrowRight } from '@/assets/svg/arrow-right';
 
-// import ArrowRight from '@/assets/svg/arrow-right.svg?react';
+import ArrowRight from '@/assets/svg/arrow-right.svg?react';
 
 interface LinkViewAllProps {
     to: string;
@@ -24,8 +23,7 @@ export const LinkViewAll = ({ to, className, team }: LinkViewAllProps) => {
             </span>
 
             <div className="w-[72px] h-[40px] flex items-center justify-center rounded-[20px] border border-blueBlack ">
-                {/* <ArrowRight className="max-w-[35px] duration-300 transition-all  group-hover:scale-90" /> */}
-                <ArrowRight className="max-w-[35px] duration-300 transition-all  group-hover:scale-90" />
+                <ArrowRight className="max-w-[35px] w-full duration-300 transition-all  group-hover:scale-90" />
             </div>
         </Link>
     );
