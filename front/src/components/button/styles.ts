@@ -6,15 +6,18 @@ export const getStyles = ({ variant, isActive, className }: IButtonStyles) => ({
     main: clsx(
         'relative group w-full group transition-all duration-300 h-[60px] flex items-center justify-center active:scale-[0.95] transition duration-150 rounded-[20px]',
         {
-            'bg-btnBgGradient hover:bg-btnTransparent border hover:border-[#225FDD] duration-300 transition-all':
-                variant === 'primary',
-            'group-hover:text-white hover:bg-btnBgGradient duration-200 transition-all primary-outline':
-                variant === 'primary-outline',
+            'border-2 border-[#225FDD]': variant === 'primary-outline',
         },
         className,
     ),
+    bg: clsx('absolute w-full h-full rounded-[18px]', {
+        'bg-btnBgGradient hover:bg-btnTransparent border-2 group-hover:border-[#225FDD] duration-300 transition-all':
+            variant === 'primary',
+        'bg-btnBgGradient duration-[0.4s] transition-all primary-outline opacity-0 group-hover:opacity-100':
+            variant === 'primary-outline',
+    }),
     span: clsx(
-        'relative z-[2] font-montserrat text-[18px] tablet:text-[24px] transition duration-150',
+        'z-[2] group font-montserrat text-[18px] tablet:text-[24px] transition duration-150',
         {
             'bg-btnGradient bg-clip-text text-transparent':
                 variant === 'primary-outline' && !isActive,

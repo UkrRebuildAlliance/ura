@@ -8,6 +8,10 @@
     @apply box-border font-montserrat leading-[1.5] text-blueBlack;
 }
 
+body {
+    scroll-behavior: smooth;
+}
+
 svg path {
     @apply text-[currentColor];
 }
@@ -89,6 +93,7 @@ textarea {
 
 .burger-overflow {
     overflow: hidden;
+    position: fixed;
 }
 
 @media screen and (min-width: 1366px) {

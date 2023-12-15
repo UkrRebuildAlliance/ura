@@ -11,10 +11,24 @@ import { BurgerMenu } from './burger-menu';
 export const Header = ({}) => {
     const [isBurgerActive, setIsBurgerActive] = useState<boolean>(false);
     const [scrollDirection, setScrollDirection] = useState('down');
+    const [windowLocation, setWindowLocation] = useState(0);
 
     const { scroll } = useScrollPosition();
     const [lastScroll, setLastScroll] = useState(scroll);
     const isHeaderHidden = scroll > 60 && scrollDirection === 'down';
+
+    const burgerClick = () => {
+        if (isBurgerActive) {
+            setTimeout(() => {
+                window.scrollTo({ top: windowLocation });
+            }, 1);
+        }
+        if (!isBurgerActive) {
+            setWindowLocation(scroll);
+        }
+
+        setIsBurgerActive(!isBurgerActive);
+    };
 
     useEffect(() => {
         if (isBurgerActive) {
@@ -59,8 +73,8 @@ export const Header = ({}) => {
 
                 <Burger
                     isActive={isBurgerActive}
+                    onClick={() => burgerClick()}
                     className="block desktop:hidden"
-                    onClick={() => setIsBurgerActive(!isBurgerActive)}
                 />
             </div>
         </header>
