@@ -63,7 +63,7 @@ export const Header = ({}) => {
                 className={clsx(
                     'relative z-[2] bg-white rounded-[20px] px-[10px] py-[26px] flex justify-between items-center w-full laptop:px-[90px] laptop:py-[28px] desktopLg:py-[24px] desktopLg:px-[20px] desktopLg:max-w-[1660px] mx-auto transition-all duration-300',
                     {
-                        'shadow-xl ': scroll > 20 && !isBurgerActive,
+                        'shadow-xl': scroll > 20 && !isBurgerActive,
                     },
                 )}
             >
