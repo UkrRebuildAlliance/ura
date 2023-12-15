@@ -67,7 +67,7 @@ export const Header = ({}) => {
                     },
                 )}
             >
-                <Logo />
+                <Logo onClick={() => setIsBurgerActive(false)} />
 
                 <HeaderNav isHeaderHidden={isHeaderHidden} />
 

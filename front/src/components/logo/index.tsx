@@ -7,18 +7,22 @@ import footer from '@/assets/img/logo.png';
 interface ILogo {
     className?: string;
     isFooter?: boolean;
+    onClick?: () => void;
 }
 
-export const Logo = ({ className, isFooter }: ILogo) => {
+export const Logo = ({ className, isFooter, onClick }: ILogo) => {
     const navigate = useNavigate();
     const { pathname } = useLocation();
 
     const handleClick = () => {
+        if (onClick) {
+            onClick();
+        }
+
         if (pathname === '/') {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         } else {
             navigate('/');
-            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     };
 
