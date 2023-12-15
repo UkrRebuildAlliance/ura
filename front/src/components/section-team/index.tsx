@@ -44,7 +44,7 @@ export const SectionTeam = ({}) => {
 
                 <LinkViewAll
                     team
-                    to={routes.client.partner}
+                    to={routes.client.team}
                     className="tablet:hidden"
                 />
             </PageContainer>
