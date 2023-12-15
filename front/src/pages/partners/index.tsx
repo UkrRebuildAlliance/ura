@@ -15,7 +15,7 @@ export const PartnersPage = ({}) => {
     const navigate = useNavigate();
 
     const onClick = () => {
-        navigate(routes.client.contacts);
+        navigate(`${routes.client.contacts}/#contact_form`);
     };
 
     return (

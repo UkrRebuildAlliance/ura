@@ -84,7 +84,7 @@ export const Contacts = ({}) => {
                     </div>
                 </div>
 
-                <div className="flex flex-col w-full">
+                <div id="contact_form" className="flex flex-col w-full">
                     <h3 className="text-center laptop:text-left text-[24px] laptop:text-[26px] desktop:text-[40px] font-semibold text-borderP mb-5 desktop:mb-12">
                         {t('stillQuestions')}
                     </h3>

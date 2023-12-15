@@ -8,8 +8,8 @@
     @apply box-border font-montserrat leading-[1.5] text-blueBlack;
 }
 
-body {
-    scroll-behavior: smooth;
+html {
+    @apply scroll-smooth;
 }
 
 svg path {

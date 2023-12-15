@@ -3,18 +3,18 @@ import { useTranslation } from 'react-i18next';
 import { constants } from '@/constants';
 import { formatPhone } from '@/utils/helpers';
 
-import { Address, Logo } from '..';
 import { SocialMedia } from '../social-media';
+import { Address, Logo, PageContainer } from '..';
 
 export const Footer = () => {
     const { t } = useTranslation();
 
     return (
-        <footer className="w-full bg-footerGradient pt-[60px] pb-[80px] tablet:px-10 desktop:py-[60px] desktop:px-0">
-            <div className="max-w-[240px] w-full mx-auto flex flex-col items-center gap-[40px] tablet:max-w-full desktop:max-w-[1620px] desktop:px-4 desktopLg:px-0">
+        <footer className="w-full bg-footerGradient">
+            <PageContainer className="flex flex-col items-center gap-[40px]">
                 <Logo isFooter />
 
-                <div className="flex flex-col gap-8 tablet:flex-row tablet:flex-wrap tablet:justify-between desktop:gap-0 desktop:w-full">
+                <div className="flex flex-col w-full gap-8 tablet:flex-row tablet:flex-wrap tablet:justify-between desktop:gap-0">
                     <div className="flex flex-col gap-5 text-center text-white font-montserrat tablet:max-w-[200px] tablet:w-full tablet:text-start">
                         <h6 className="font-semibold text-[16px] text-white">
                             {t('footer.addresses_title')}
@@ -63,7 +63,7 @@ export const Footer = () => {
                 <p className="text-white">
                     {t('footer.copyright')} &copy; {new Date().getFullYear()}
                 </p>
-            </div>
+            </PageContainer>
         </footer>
     );
 };

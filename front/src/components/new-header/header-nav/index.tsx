@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher, Search } from '@/components';
 
 import { menuLinks } from '../links';
+import clsx from 'clsx';
 
 interface IHeaderNav {
     isHeaderHidden: boolean;
@@ -14,13 +15,22 @@ export const HeaderNav = ({ isHeaderHidden }: IHeaderNav) => {
     const { t } = useTranslation();
     const [activeSubMenu, setActiveSubMenu] = useState<number>(-1);
 
+    const btns = [t('navbar.activities'), t('navbar.about_us')];
+
+    const onMouseEnter = (idx: number) => {
+        setActiveSubMenu(idx);
+    };
+
+    const onMouseLeave = () => {
+        setActiveSubMenu(-1);
+    };
+
     useEffect(() => {
         if (isHeaderHidden) {
             setActiveSubMenu(-1);
         }
     }, [isHeaderHidden]);
 
-    const btns = [t('navbar.activities'), t('navbar.about_us')];
     return (
         <div className="hidden desktop:flex gap-[50px] relative">
             {btns.map((btn, idx) => {
@@ -30,18 +40,18 @@ export const HeaderNav = ({ isHeaderHidden }: IHeaderNav) => {
                 return (
                     <div
                         key={`menu-${idx}-header`}
-                        onMouseEnter={() => {
-                            setActiveSubMenu(idx);
-                        }}
-                        onMouseLeave={() => {
-                            setActiveSubMenu(-1);
-                        }}
+                        onMouseLeave={onMouseLeave}
+                        onMouseEnter={() => onMouseEnter(idx)}
                         className="flex max-w-[110px] w-full items-center justify-center capitalize text-blueBlack text-[20px] font-normal cursor-pointer"
                     >
                         <span>{btn}</span>
 
                         {idx === activeSubMenu && !isHeaderHidden && (
-                            <div className="absolute flex flex-col top-[calc(50%+26px)] w-full bg-white rounded-b-[20px] shadow-md -translate-x-1/2 left-1/2 px-[56px] py-[24px]">
+                            <div
+                                className={clsx(
+                                    'absolute flex flex-col top-[calc(50%+20px)] animate-fadeIn w-full bg-white rounded-b-[20px] shadow-md -translate-x-1/2 left-1/2 px-[56px] py-[24px] transition-all duration-500',
+                                )}
+                            >
                                 {menu.map(({ name, href }, idx) => (
                                     <Link
                                         key={`submenu-${idx}-header`}
