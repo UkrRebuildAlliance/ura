@@ -36,7 +36,8 @@ export default {
                 homeBanner: "url('/src/assets/img/home_banner_lg.png')",
                 homeBanner_sm: "url('/src/assets/img/home_banner_sm.png')",
                 historyBanner: "url('/src/assets/img/banner_history.png')",
-                historyBanner_sm: "url('/src/assets/img/')",
+                historyBanner_sm:
+                    "url('/src/assets/img/banner_history_sm.png')",
                 teamBanner: "url('/src/assets/img/banner_team.png')",
                 teamBanner_sm: "url('/src/assets/img/banner_team_sm.png')",
                 blue_logo: "url('/src//assets/img/blue_logo.png')",

@@ -9,7 +9,7 @@ export const getStyles = ({ className }: IStyleBanner) => ({
         className,
     ),
     container:
-        'flex flex-col gap-[40px] max-w-[800px] pt-[72px] sm:pt-[150px] tablet:pt-[120px] tablet:mx-auto laptop:relative laptop:left-1/2 laptop:m-0 laptop:max-w-[420px] desktop:pt-0 desktop:max-w-[50%] desktopLg:max-w-[800px] desktopLg:pt-[150px]',
+        'flex flex-col gap-[40px] max-w-[800px] pt-[72px] sm:pt-[150px] tablet:pt-[120px] tablet:mx-auto laptop:relative laptop:left-1/2 laptop:m-0 laptop:max-w-[420px] desktop:pt-0 desktop:max-w-[45%] min-[1660px]:max-w-[600px] desktopLg:max-w-[800px] desktopLg:pt-[150px]',
     ttlStyle:
         'text-[24px] text-white font-extrabold sm:text-[40px] laptop:text-[30px] desktop:text-[40px] desktopLg:text-[50px] mb-[40px] ',
     missionStyle:
