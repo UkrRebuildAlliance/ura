@@ -19,12 +19,19 @@ export const Header = ({}) => {
 
     const burgerClick = () => {
         if (isBurgerActive) {
+            document.documentElement.style.scrollBehavior = 'inherit';
+
             setTimeout(() => {
                 window.scrollTo({ top: windowLocation });
-            }, 1);
+            }, 2);
         }
+
         if (!isBurgerActive) {
             setWindowLocation(scroll);
+
+            setTimeout(() => {
+                document.documentElement.style.scrollBehavior = 'smooth';
+            }, 2);
         }
 
         setIsBurgerActive(!isBurgerActive);
@@ -32,7 +39,9 @@ export const Header = ({}) => {
 
     useEffect(() => {
         if (isBurgerActive) {
-            document.body.classList.add('burger-overflow');
+            setTimeout(() => {
+                document.body.classList.add('burger-overflow');
+            }, 150);
         }
 
         if (!isBurgerActive) {
