@@ -35,9 +35,9 @@ export const en = {
         viewAllTeam: 'View all',
     },
     main_banner: {
-        ttl: 'The Ukraine Recovery Alliance - is the main provider of international assistance.',
+        ttl: 'The Ukraine Recovery Alliance — is the main provider of international assistance.',
         mission:
-            'Our mission - create conditions for Ukrainians to return home.',
+            'Our mission — create conditions for Ukrainians to return home.',
     },
     buns_banner: {
         title: 'Areas of Alliance activity',
