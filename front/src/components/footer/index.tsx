@@ -1,24 +1,27 @@
 import { useTranslation } from 'react-i18next';
 
-import { Logo } from '..';
+import { constants } from '@/constants';
+import { formatPhone } from '@/utils/helpers';
+
 import { SocialMedia } from '../social-media';
+import { Address, Logo, PageContainer } from '..';
 
 export const Footer = () => {
     const { t } = useTranslation();
 
     return (
-        <footer className="w-full bg-footerGradient pt-[60px] pb-[80px] tablet:px-10 desktop:py-[60px] desktop:px-0">
-            <div className="max-w-[240px] w-full mx-auto flex flex-col items-center gap-[40px] tablet:max-w-full desktop:max-w-[1620px] desktop:px-4 desktopLg:px-0">
+        <footer className="w-full bg-footerGradient">
+            <PageContainer className="flex flex-col items-center gap-[40px]">
                 <Logo isFooter />
 
-                <div className="flex flex-col gap-8 tablet:flex-row tablet:flex-wrap tablet:justify-between desktop:gap-0 desktop:w-full">
+                <div className="flex flex-col w-full gap-8 tablet:flex-row tablet:flex-wrap tablet:justify-between desktop:gap-0">
                     <div className="flex flex-col gap-5 text-center text-white font-montserrat tablet:max-w-[200px] tablet:w-full tablet:text-start">
                         <h6 className="font-semibold text-[16px] text-white">
                             {t('footer.addresses_title')}
                         </h6>
 
                         <p className="font-normal text-[14px] text-white">
-                            {t('footer.addresses')}
+                            <Address />
                         </p>
                     </div>
 
@@ -28,10 +31,10 @@ export const Footer = () => {
                         </h6>
 
                         <a
-                            href="tel:+380001232233"
+                            href={`tel:${constants.phone}`}
                             className="font-normal text-[14px] text-white"
                         >
-                            +38(000)123 22 33
+                            {formatPhone(constants.phone)}
                         </a>
                     </div>
 
@@ -41,10 +44,10 @@ export const Footer = () => {
                         </h6>
 
                         <a
-                            href="mailto:Info@ukrainerebuild.com.ua"
+                            href={`mailto:${constants.email}`}
                             className="font-normal text-[14px] text-white"
                         >
-                            Info@ukrainerebuild.com.ua
+                            {constants.email}
                         </a>
                     </div>
 
@@ -53,14 +56,14 @@ export const Footer = () => {
                             {t('footer.social_title')}
                         </h6>
 
-                        <SocialMedia className="gap-[22px] text-rose-500" />
+                        <SocialMedia className="gap-[22px]" isFooter />
                     </div>
                 </div>
 
                 <p className="text-white">
                     {t('footer.copyright')} &copy; {new Date().getFullYear()}
                 </p>
-            </div>
+            </PageContainer>
         </footer>
     );
 };

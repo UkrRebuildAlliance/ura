@@ -1,5 +1,13 @@
 export const en = {
     readMore: 'Read more',
+    stillQuestions: 'Contact us',
+    buttons: {
+        send: 'Send',
+    },
+    inputs: {
+        name_contacts: 'Name/Company',
+        message_contacts: 'Write your message...',
+    },
     navbar: {
         activities: 'activities',
         about_us: 'about us',
@@ -16,7 +24,7 @@ export const en = {
     },
     footer: {
         addresses_title: 'Addresses',
-        addresses: '40 Bazarna Street, Apt. 503, 65048 Odesa, Ukraine',
+        addresses: '40 Bazarna Street, Apt. 503{{br}} 65048 Odesa, Ukraine',
         tel_title: 'Phone number',
         write_us_title: 'Write to us',
         social_title: 'Social networks',
@@ -27,9 +35,9 @@ export const en = {
         viewAllTeam: 'View all',
     },
     main_banner: {
-        ttl: 'The Ukraine Recovery Alliance - is the main provider of international assistance.',
+        ttl: `The Ukraine Rebuilding Alliance — is the main provider of international assistance.`,
         mission:
-            'Our mission - create conditions for Ukrainians to return home.',
+            'Our mission — create conditions for Ukrainians to return home.',
     },
     buns_banner: {
         title: 'Areas of Alliance activity',

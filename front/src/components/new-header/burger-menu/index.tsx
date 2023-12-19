@@ -31,7 +31,7 @@ export const BurgerMenu = ({
     return (
         <div
             className={clsx(
-                'absolute  font-medium text-blueBlack text-[26px]  laptop:text-[36px] capitalize  top-0 left-0 w-full h-screen bg-white transition-all duration-300 after:transition-all  after:block after:w-full after:h-full after:absolute after:bg-burgerGradient after:top-0 after:left-0',
+                'fixed font-medium text-blueBlack text-[26px]  laptop:text-[36px] capitalize top-0 left-0 w-full h-screen bg-white transition-all duration-300 after:transition-all  after:block after:w-full after:h-full after:absolute after:bg-burgerGradient after:top-0 after:left-0',
                 {
                     'translate-y-0 after:translate-y-full after:delay-300 after:duration-1000':
                         isBurgerActive,

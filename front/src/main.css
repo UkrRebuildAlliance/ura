@@ -8,8 +8,17 @@
     @apply box-border font-montserrat leading-[1.5] text-blueBlack;
 }
 
+html {
+    @apply scroll-smooth;
+}
+
 svg path {
     @apply text-[currentColor];
+}
+
+input,
+textarea {
+    @apply outline-none;
 }
 
 .menu {
@@ -84,6 +93,7 @@ svg path {
 
 .burger-overflow {
     overflow: hidden;
+    position: fixed;
 }
 
 @media screen and (min-width: 1366px) {

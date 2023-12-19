@@ -14,7 +14,7 @@ export const PageBanner = ({ className, title, mission }: IPageBanner) => {
     });
 
     return (
-        <section className={`${banner}`}>
+        <section className={banner}>
             <PageContainer className="w-full">
                 <Breadcrumbs isBanner />
 

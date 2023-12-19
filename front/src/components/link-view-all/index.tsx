@@ -21,8 +21,9 @@ export const LinkViewAll = ({ to, className, team }: LinkViewAllProps) => {
             <span className="text-[12px] font-semibold tablet:text-[16px] laptop:text-[24px] transition-all duration-300 group-hover:scale-105">
                 {!team ? t('links.viewAll') : t('links.viewAllTeam')}
             </span>
+
             <div className="w-[72px] h-[40px] flex items-center justify-center rounded-[20px] border border-blueBlack ">
-                <ArrowRight className="max-w-[35px] duration-300 transition-all  group-hover:scale-90" />
+                <ArrowRight className="w-[35px] duration-300 transition-all  group-hover:scale-90" />
             </div>
         </Link>
     );

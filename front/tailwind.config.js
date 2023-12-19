@@ -45,7 +45,8 @@ export default {
                 homeBanner: "url('/src/assets/img/home_banner_lg.png')",
                 homeBanner_sm: "url('/src/assets/img/home_banner_sm.png')",
                 historyBanner: "url('/src/assets/img/banner_history.png')",
-                historyBanner_sm: "url('/src/assets/img/')",
+                historyBanner_sm:
+                    "url('/src/assets/img/banner_history_sm.png')",
                 teamBanner: "url('/src/assets/img/banner_team.png')",
                 teamBanner_sm: "url('/src/assets/img/banner_team_sm.png')",
                 blue_logo: "url('/src//assets/img/blue_logo.png')",
@@ -86,8 +87,18 @@ export default {
             borderRadius: {
                 20: '20px',
             },
+
             boxShadow: {
                 login: `inset 0px 0px 45px 5px rgba(62,62,62,1)`,
+            },
+            keyframes: {
+                fadeIn: {
+                    from: { opacity: '0' },
+                    to: { opacity: '1' },
+                },
+            },
+            animation: {
+                fadeIn: 'fadeIn 0.25s linear forwards',
             },
         },
     },

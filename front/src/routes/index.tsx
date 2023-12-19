@@ -5,6 +5,7 @@ import { ProtectedRoute } from '@/components';
 import {
     HomePage,
     NewsById,
+    Contacts,
     NewsPage,
     TeamPage,
     Dashboard,
@@ -42,7 +43,7 @@ export const router = createBrowserRouter([
             { path: client.team, element: <TeamPage /> },
             { path: client.team_id, element: <TeamsById /> },
             { path: client.reporting, element: <ReportingPage /> },
-            { path: client.contacts, element: <h1>contacts</h1> },
+            { path: client.contacts, element: <Contacts /> },
             { path: client.search, element: <SearchPage /> },
         ],
     },
