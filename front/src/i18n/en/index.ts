@@ -104,7 +104,7 @@ export const en = {
         message4: ' and try again from there',
     },
     login: {
-        title: 'Entrance',
+        title: 'Sign In',
         login: 'Login',
     },
 };
