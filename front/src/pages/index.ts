@@ -1,3 +1,4 @@
+export { AdminNews } from './admin-news';
 export { Contacts } from './contacts';
 export { Dashboard } from './dashboard';
 export { DiscoverById } from './discover-by-id';
@@ -6,6 +7,8 @@ export { ErrorPage } from './error-page';
 export { HistoryPage } from './history';
 export { HomePage } from './home';
 export { LayoutClient } from './layout-client';
+export { LayoutDashboard } from './layout-dashboard';
+export { LoginPage } from './login';
 export { NewsById } from './news-by-id';
 export { NewsPage } from './news';
 export { PartnersPage } from './partners';

@@ -5,12 +5,13 @@ import header from '@/assets/img/blue_logo.png';
 import footer from '@/assets/img/logo.png';
 
 interface ILogo {
+    isAdmin?: boolean;
     className?: string;
     isFooter?: boolean;
     onClick?: () => void;
 }
 
-export const Logo = ({ className, isFooter, onClick }: ILogo) => {
+export const Logo = ({ className, isFooter, onClick, isAdmin }: ILogo) => {
     const navigate = useNavigate();
     const { pathname } = useLocation();
 
@@ -22,6 +23,10 @@ export const Logo = ({ className, isFooter, onClick }: ILogo) => {
         if (pathname === '/') {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         } else {
+            if (isAdmin) {
+                navigate('/dashboard/');
+                return;
+            }
             navigate('/');
         }
     };
