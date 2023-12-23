@@ -2,15 +2,16 @@ import { createBrowserRouter } from 'react-router-dom';
 
 import { routes } from '@/constants';
 import {
+    Contacts,
     HomePage,
     NewsById,
-    Contacts,
     NewsPage,
     TeamPage,
+    AdminNews,
     Dashboard,
-    TeamsById,
     ErrorPage,
     LoginPage,
+    TeamsById,
     SearchPage,
     HistoryPage,
     ProjectById,
@@ -56,8 +57,9 @@ export const router = createBrowserRouter([
         element: <LayoutDashboard />,
         children: [
             { index: true, element: <Dashboard /> },
-            { path: admin.news, element: <h1>admin news</h1> },
+            { path: admin.news, element: <AdminNews /> },
             { path: admin.news_id, element: <h1>admin news_id</h1> },
+            { path: admin.news_create, element: <h1>admin create</h1> },
             { path: admin.partner, element: <h1>admin partner</h1> },
             { path: admin.partner_id, element: <h1>admin partner_id</h1> },
             { path: admin.project, element: <h1>admin project</h1> },
