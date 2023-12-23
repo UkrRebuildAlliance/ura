@@ -28,22 +28,34 @@ export const Input = ({
 
     if (type === 'textarea') {
         return (
-            <textarea
-                {...rest}
-                {...field}
-                placeholder={placeholder}
-                className="min-h-[146px] grow w-full  border-2 border-borderP py-[19px] px-[32px] rounded-20 resize-none"
-            />
+            <div className="flex flex-col w-full">
+                <textarea
+                    {...rest}
+                    {...field}
+                    placeholder={placeholder}
+                    className={styles.textarea}
+                />
+
+                {error && (
+                    <p className="mt-2 ml-5 text-orange-500">{error.message}</p>
+                )}
+            </div>
         );
     }
 
     return (
-        <input
-            {...rest}
-            {...field}
-            type={type}
-            className={styles}
-            placeholder={placeholder}
-        />
+        <div>
+            <input
+                {...rest}
+                {...field}
+                type={type}
+                className={styles.input}
+                placeholder={placeholder}
+            />
+
+            {error && (
+                <p className="mt-2 ml-5 text-orange-500">{error.message}</p>
+            )}
+        </div>
     );
 };

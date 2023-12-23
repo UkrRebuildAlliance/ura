@@ -1,6 +1,18 @@
 export const en = {
     readMore: 'Read more',
-    stillQuestions: 'Contact us',
+    contacts: {
+        stillQuestions: 'Contact us',
+        errors: {
+            name: 'Name is required',
+            nameShort: 'Name is too short',
+            email: 'Email is required',
+            emailInvalid: 'Email is not valid',
+            phone: 'Phone is required',
+            phoneInvalid: 'Phone is not valid',
+            message: 'Message is required',
+            messageShort: 'Message is too short',
+        },
+    },
     buttons: {
         send: 'Send',
     },
