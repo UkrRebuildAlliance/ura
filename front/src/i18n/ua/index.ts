@@ -1,6 +1,18 @@
 export const ua = {
     readMore: 'Детальніше',
-    stillQuestions: 'Звязатись з нами',
+    contacts: {
+        stillQuestions: 'Звязатись з нами',
+        errors: {
+            name: "Ім'я обов'язкове",
+            nameShort: "Ім'я занадто коротке",
+            email: "Електронна пошта обов'язкова",
+            emailInvalid: 'Електронна пошта недійсна',
+            phone: "Телефон обов'язковий",
+            phoneInvalid: 'Телефон недійсний',
+            message: "Повідомлення обов'язкове",
+            messageShort: 'Повідомлення занадто коротке',
+        },
+    },
     buttons: {
         send: 'Відправити',
     },

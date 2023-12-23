@@ -86,7 +86,7 @@ export const Contacts = ({}) => {
 
                 <div id="contact_form" className="flex flex-col w-full">
                     <h3 className="text-center laptop:text-left text-[24px] laptop:text-[26px] desktop:text-[40px] font-semibold text-borderP mb-5 desktop:mb-12">
-                        {t('stillQuestions')}
+                        {t('contacts.stillQuestions')}
                     </h3>
 
                     <form onSubmit={handleSubmit((data) => onSubmit(data))}>
@@ -95,17 +95,44 @@ export const Contacts = ({}) => {
                                 <Input
                                     name="firstName"
                                     control={control}
+                                    rules={{
+                                        required: t('contacts.errors.name'),
+                                        minLength: {
+                                            value: 2,
+                                            message: t(
+                                                'contacts.errors.nameShort',
+                                            ),
+                                        },
+                                    }}
                                     placeholder={t('inputs.name_contacts')}
                                 />
                                 <Input
                                     name="phone"
                                     control={control}
                                     placeholder="+380501232233"
+                                    rules={{
+                                        required: t('contacts.errors.phone'),
+                                        pattern: {
+                                            value: /^\+380\d{3}\d{2}\d{2}\d{2}$/,
+                                            message: t(
+                                                'contacts.errors.phoneInvalid',
+                                            ),
+                                        },
+                                    }}
                                 />
                                 <Input
                                     name="email"
                                     control={control}
                                     placeholder="Dmitriy.Latvinenko@gmail.com"
+                                    rules={{
+                                        required: t('contacts.errors.email'),
+                                        pattern: {
+                                            value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                                            message: t(
+                                                'contacts.errors.emailInvalid',
+                                            ),
+                                        },
+                                    }}
                                 />
                             </div>
 
@@ -114,6 +141,15 @@ export const Contacts = ({}) => {
                                 type="textarea"
                                 control={control}
                                 placeholder={t('inputs.message_contacts')}
+                                rules={{
+                                    required: t('contacts.errors.message'),
+                                    minLength: {
+                                        value: 10,
+                                        message: t(
+                                            'contacts.errors.messageShort',
+                                        ),
+                                    },
+                                }}
                             />
                         </div>
 
