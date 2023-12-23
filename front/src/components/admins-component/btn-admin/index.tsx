@@ -26,7 +26,16 @@ export const ButtonAdmin = ({
             {!isFetching ? (
                 <>
                     {icon && <div className={classIcon}>{icon}</div>}
-                    {text && <span className="select-none">{text}</span>}
+                    {text && (
+                        <span
+                            className={clsx('select-none', {
+                                'text-white group-hover:text-loginBg':
+                                    variant === 'primary',
+                            })}
+                        >
+                            {text}
+                        </span>
+                    )}
                 </>
             ) : (
                 <span className="loader-btn"></span>

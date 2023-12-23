@@ -17,18 +17,20 @@ export const AdminNavigation = ({}) => {
         >
             <button
                 className={clsx(
-                    'absolute px-5 py-2 z-[10] text-white top-1 right-0 translate-x-full transition-all underline duration-500 linear laptop:hidden ',
+                    'absolute px-5 py-2 z-[10] text-white top-1 right-0 transition-all underline duration-500 linear laptop:hidden ',
                     {
-                        '-translate-x-0 translate-y-0 bg-transparent transition-all duration-500 ':
+                        'translate-x-0 bg-transparent transition-all duration-500 ':
                             isAsideOpen,
+                        'translate-x-full bg-transparent transition-all duration-500 ':
+                            !isAsideOpen,
                     },
                 )}
                 onClick={() => setIsAsideOpen(!isAsideOpen)}
             >
-                {isAsideOpen ? 'Закрити' : 'Відкрити'}
+                {isAsideOpen ? 'Закрити' : 'Меню'}
             </button>
 
-            <div className="flex flex-col items-start justify-center w-full gap-10 pt-16 text-center laptop:text-start laptop:justify-start laptop:px-[40px] desktopLg:px-2">
+            <div className="flex flex-col items-start justify-center w-full gap-10 pt-[52px] text-center laptop:text-start laptop:justify-start laptop:px-[40px] desktopLg:px-2">
                 {links.map(({ name, href }, idx) => (
                     <Link
                         to={href}

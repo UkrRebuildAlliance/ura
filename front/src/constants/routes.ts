@@ -18,6 +18,7 @@ export const routes = {
     admin: {
         dashboard: '/dashboard',
         news: '/dashboard/news',
+        news_create: '/dashboard/news/create',
         news_id: '/dashboard/news/:newsId',
         partner: '/dashboard/partners',
         partner_id: '/dashboard/partners/:partnersId',

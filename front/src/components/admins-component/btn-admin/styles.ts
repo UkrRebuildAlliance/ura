@@ -11,7 +11,8 @@ export const getStyles = (variant: IVariant) => {
 
     const outlineVariant = 'bg-transparent enabled:hover:text-white';
 
-    const baseVariant = 'enabled:text-white enabled:dark:text-white ';
+    const baseVariant =
+        'group-[btn] enabled:text-white enabled:dark:text-white ';
 
     return clsx(
         `flex items-center justify-center gap-2 py-2 px-4 box-border max-h-10 decoration-0 rounded disabled:opacity-[0.8] disabled:select-none transition-colors duration-300 ease-in-out border`,
