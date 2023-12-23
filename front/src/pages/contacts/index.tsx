@@ -89,7 +89,7 @@ export const Contacts = ({}) => {
                         {t('contacts.stillQuestions')}
                     </h3>
 
-                    <form onSubmit={handleSubmit((data) => onSubmit(data))}>
+                    <form onSubmit={handleSubmit(onSubmit)}>
                         <div className="flex flex-col w-full desktop:flex-row gap-[30px] laptop:gap-5 desktop:gap-12">
                             <div className="flex flex-col gap-5 desktop:gap-[30px] w-full">
                                 <Input
@@ -113,7 +113,7 @@ export const Contacts = ({}) => {
                                     rules={{
                                         required: t('contacts.errors.phone'),
                                         pattern: {
-                                            value: /^\+380\d{3}\d{2}\d{2}\d{2}$/,
+                                            value: /^\+\d{3}\d{3}\d{2}\d{2}\d{2}$/,
                                             message: t(
                                                 'contacts.errors.phoneInvalid',
                                             ),
