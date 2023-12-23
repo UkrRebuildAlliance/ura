@@ -26,6 +26,7 @@ export const routes = {
         discover: '/dashboard/discover',
         discover_id: '/dashboard/discover/:discoverId',
         reporting: '/dashboard/reporting',
+        incoming: '/dashboard/incoming',
     },
     login: '/login',
 };

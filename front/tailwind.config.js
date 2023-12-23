@@ -37,6 +37,7 @@ export default {
                 crumbsText: '#474747',
                 newsBlock: '#E2E1FF',
                 burgerLinks: '#141414',
+                adminLinksActive: '#B6AEFF',
             },
             backgroundImage: {
                 'partners-sm': "url('/src/assets/img/bg_partner_sm.png')",

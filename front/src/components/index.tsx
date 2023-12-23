@@ -32,8 +32,11 @@ export { SocialSvg } from './social-svg';
 export { TeamsCard } from './teams-card';
 export { TitleContainer } from './title-container';
 export {
+    PageHead,
     LoginForm,
     InputAdmin,
     ButtonAdmin,
+    AdminHeader,
     AdminContainer,
+    AdminNavigation,
 } from './admins-component';

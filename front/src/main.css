@@ -21,6 +21,22 @@ textarea {
     @apply outline-none;
 }
 
+.scroll::-webkit-scrollbar {
+    @apply w-[9px];
+}
+
+.scroll::-webkit-scrollbar-track {
+    @apply bg-transparent;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    @apply transition-all duration-200 border-2 border-transparent border-solid lg:border-2 bg-partnersMatt rounded-xl bg-clip-content;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+    @apply border bg-partnersMatt;
+}
+
 .menu {
     --color: #1a1035;
     width: 44px;

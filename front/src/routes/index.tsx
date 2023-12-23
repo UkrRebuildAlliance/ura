@@ -1,7 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 
 import { routes } from '@/constants';
-import { ProtectedRoute } from '@/components';
 import {
     HomePage,
     NewsById,
@@ -21,6 +20,7 @@ import {
     LayoutClient,
     PartnersPage,
     ReportingPage,
+    LayoutDashboard,
 } from '@/pages';
 
 const { client, admin, login } = routes;
@@ -53,21 +53,19 @@ export const router = createBrowserRouter([
     },
     {
         path: admin.dashboard,
-        element: (
-            <ProtectedRoute>
-                <Dashboard />
-            </ProtectedRoute>
-        ),
+        element: <LayoutDashboard />,
         children: [
+            { index: true, element: <Dashboard /> },
             { path: admin.news, element: <h1>admin news</h1> },
-            { path: admin.news_id, element: <h1>news_id</h1> },
-            { path: admin.partner, element: <h1>partner</h1> },
-            { path: admin.partner_id, element: <h1>partner_id</h1> },
-            { path: admin.project, element: <h1>project</h1> },
-            { path: admin.project_id, element: <h1>project_id</h1> },
-            { path: admin.discover, element: <h1>discover</h1> },
-            { path: admin.discover_id, element: <h1>discover_id</h1> },
-            { path: admin.reporting, element: <h1>reporting</h1> },
+            { path: admin.news_id, element: <h1>admin news_id</h1> },
+            { path: admin.partner, element: <h1>admin partner</h1> },
+            { path: admin.partner_id, element: <h1>admin partner_id</h1> },
+            { path: admin.project, element: <h1>admin project</h1> },
+            { path: admin.project_id, element: <h1>admin project_id</h1> },
+            { path: admin.discover, element: <h1>admin discover</h1> },
+            { path: admin.discover_id, element: <h1>admin discover_id</h1> },
+            { path: admin.reporting, element: <h1>admin reporting</h1> },
+            { path: admin.incoming, element: <h1>admin incoming</h1> },
         ],
     },
 ]);
