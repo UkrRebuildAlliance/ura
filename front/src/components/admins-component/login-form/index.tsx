@@ -12,13 +12,9 @@ export const LoginForm = ({}) => {
             </h3>
 
             <div className="flex flex-wrap gap-5 w-full py-5 sm:max-w-[400px] mx-auto">
-                <InputAdmin name="login" label="Login :" />
+                <InputAdmin name="login" label="Login" />
 
-                <InputAdmin
-                    name="password"
-                    type="password"
-                    label="Password :"
-                />
+                <InputAdmin name="password" type="password" label="Password" />
 
                 <ButtonAdmin
                     className="ml-auto w-[40%] min-w-[120px] mt-5"

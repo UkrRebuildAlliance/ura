@@ -1,5 +1,6 @@
 export { AdminNews } from './admin-news';
 export { AdminPartnersPage } from './admin-partners';
+export { AdminProject } from './admin-project';
 export { AdminReportingPage } from './admin-reporting-page';
 export { Contacts } from './contacts';
 export { Dashboard } from './dashboard';

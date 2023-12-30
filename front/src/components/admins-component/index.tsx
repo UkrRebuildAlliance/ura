@@ -7,6 +7,7 @@ export { IncomingDetails } from './incoming-details';
 export { InfoControl } from './info-control';
 export { InfoDetails } from './info-details';
 export { InputAdmin } from './input-admin';
+export { InputFile } from './input-file';
 export { LoginForm } from './login-form';
 export { PageHead } from './page-head';
 export { PartnersControl } from './partners-control';

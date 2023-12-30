@@ -5,6 +5,7 @@ export { Breadcrumbs } from './breadcrumbs';
 export { Button } from './button';
 export { ContentText } from './content-text';
 export { Footer } from './footer';
+export { Form } from './form';
 export { Header } from './new-header';
 export { InfoBlock } from './infoBlock';
 export { Input } from './input';
@@ -33,6 +34,7 @@ export { TeamsCard } from './teams-card';
 export { TitleContainer } from './title-container';
 export {
     PageHead,
+    InputFile,
     LoginForm,
     InputAdmin,
     ButtonAdmin,
@@ -45,3 +47,5 @@ export {
     PartnersDetails,
     AdminNavigation,
 } from './admins-component';
+
+export { ButtonForm, ButtonAdminForm } from './form-handler';

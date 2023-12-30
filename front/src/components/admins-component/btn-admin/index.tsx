@@ -7,11 +7,11 @@ import { getStyles } from './styles';
 export const ButtonAdmin = ({
     icon,
     text,
-    variant,
     disabled,
     className,
     iconRight,
     isFetching,
+    variant = 'primary',
     ...rest
 }: IButton) => {
     const btnStyles = getStyles(variant);
@@ -23,8 +23,8 @@ export const ButtonAdmin = ({
     return (
         <button
             {...rest}
-            className={className ? `${btnStyles} ${className}` : btnStyles}
             disabled={disabled}
+            className={className ? `${btnStyles} ${className}` : btnStyles}
         >
             {!isFetching ? (
                 <>

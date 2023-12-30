@@ -12,6 +12,5 @@ export const ProtectedRoute = ({ children }: ChildrenProps) => {
         return <Navigate to="/login" />;
     }
 
-    useEffect(() => {}, [isToken]);
     return children;
 };
