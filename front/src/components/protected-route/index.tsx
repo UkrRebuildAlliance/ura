@@ -1,11 +1,12 @@
 import { useEffect } from 'react';
-import Cookies from 'js-cookie';
+//  TODO For testing app in IOS
+// import Cookies from 'js-cookie';
 import { Navigate } from 'react-router-dom';
 
 import { ChildrenProps } from '@/types';
 
 export const ProtectedRoute = ({ children }: ChildrenProps) => {
-    const isToken = Cookies.get('refreshToken') || false;
+    const isToken = true;
 
     if (!isToken) {
         return <Navigate to="/login" />;
