@@ -1,3 +1,5 @@
+import clsx from 'clsx';
+
 import { getStyles } from './styles';
 import { InputProps } from './types';
 import { SwitchPassword } from './switch';
@@ -9,6 +11,8 @@ export const InputAdmin = ({
     label,
     value,
     disabled,
+    className,
+    isWhiteText,
     placeholder,
     type = 'text',
     ...props
@@ -17,14 +21,26 @@ export const InputAdmin = ({
     const { currentType, switcher } = SwitchPassword(isTypePassword);
     const changingType = isTypePassword ? currentType : type;
 
-    const { textarea, mainInput } = getStyles(error, isTypePassword);
+    const { textarea, mainInput } = getStyles(
+        error,
+        isTypePassword,
+        isWhiteText,
+    );
 
     return (
         <>
             {type === 'textarea' && (
-                <label className="flex flex-col w-full gap-3">
+                <label
+                    className={clsx('flex flex-col w-full gap-3', className)}
+                >
                     {label && (
-                        <span className="pl-1 mb-1 text-sm">{label}</span>
+                        <span
+                            className={clsx('pl-1 mb-1 text-sm ', {
+                                'text-white': isWhiteText,
+                            })}
+                        >
+                            {label}
+                        </span>
                     )}
 
                     <div className="flex flex-col w-full gap-2">
@@ -40,9 +56,13 @@ export const InputAdmin = ({
             )}
 
             {type !== 'textarea' && (
-                <label className="flex flex-col w-full">
+                <label className={clsx('flex flex-col w-full', className)}>
                     {label && (
-                        <span className="pl-1 mb-1 text-sm text-text">
+                        <span
+                            className={clsx('pl-1 mb-1 text-sm text-text', {
+                                'text-white': isWhiteText,
+                            })}
+                        >
                             {label}
                         </span>
                     )}

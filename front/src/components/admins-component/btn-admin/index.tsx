@@ -15,7 +15,10 @@ export const ButtonAdmin = ({
     ...rest
 }: IButton) => {
     const btnStyles = getStyles(variant);
-    const classIcon = clsx({ 'order-1': iconRight, 'order-0': !iconRight });
+    const classIcon = clsx('group/btn', {
+        'order-1': iconRight,
+        'order-0': !iconRight,
+    });
 
     return (
         <button
@@ -28,8 +31,8 @@ export const ButtonAdmin = ({
                     {icon && <div className={classIcon}>{icon}</div>}
                     {text && (
                         <span
-                            className={clsx('select-none', {
-                                'text-white group-hover:text-loginBg':
+                            className={clsx('select-none group/btn', {
+                                'text-white group-hover/btn:text-loginBg':
                                     variant === 'primary',
                             })}
                         >

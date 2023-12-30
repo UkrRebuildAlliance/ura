@@ -31,7 +31,9 @@ export const Crumb = ({ path, name, idx, crumbsLng, isBanner }: ICrumbs) => {
             {idx < shortCrumbs && (
                 <span className="text-white">
                     <Right
-                        className={clsx('w-6', { 'text-white': isBanner })}
+                        className={clsx('w-6 text-blueBlack', {
+                            'text-white': isBanner,
+                        })}
                     />
                 </span>
             )}
