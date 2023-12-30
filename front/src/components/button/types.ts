@@ -11,12 +11,13 @@ interface CustomButton
 export interface IButton extends Omit<CustomButton, 'ref'> {
     text: string;
     icon?: ReactNode;
-    variant?: VariantType;
     className?: string;
     isActive?: boolean;
+    variant?: VariantType;
 }
 
 export interface IButtonStyles {
+    disabled?: boolean;
     isActive?: boolean;
     className?: string;
     variant: VariantType;

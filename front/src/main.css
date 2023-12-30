@@ -5,13 +5,15 @@
 @tailwind utilities;
 
 * {
-    @apply box-border font-montserrat leading-[1.5] text-blueBlack;
+    @apply box-border font-montserrat leading-[1.5];
 }
 
 html {
-    @apply scroll-smooth;
+    @apply scroll-smooth text-inherit;
 }
-
+body {
+    @apply text-blueBlack;
+}
 svg path {
     @apply text-[currentColor];
 }
