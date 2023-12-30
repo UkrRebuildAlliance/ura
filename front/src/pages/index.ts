@@ -1,4 +1,5 @@
 export { AdminNews } from './admin-news';
+export { AdminProject } from './admin-project';
 export { Contacts } from './contacts';
 export { Dashboard } from './dashboard';
 export { DiscoverById } from './discover-by-id';

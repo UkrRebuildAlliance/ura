@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { FieldValues, useForm } from 'react-hook-form';
 
 import { constants } from '@/constants';
-import { formatPhone } from '@/utils/helpers';
+import { formatPhone, getDisabled } from '@/utils/helpers';
 import {
     Maps,
     Input,
@@ -28,6 +28,8 @@ export const Contacts = ({}) => {
             firstName: '',
         },
     });
+
+    const isDisabled = getDisabled(errors);
 
     const onSubmit = (data: FieldValues) => {
         console.log(data);
@@ -155,9 +157,9 @@ export const Contacts = ({}) => {
 
                         <Button
                             type="submit"
+                            disabled={isDisabled}
                             text={t('buttons.send')}
                             variant="primary-outline"
-                            disabled={Object.keys(errors)?.length > 0}
                             className="mt-[50px] laptop:mt-10 desktop:mt-20 tablet:max-w-[250px] ml-auto"
                         />
                     </form>

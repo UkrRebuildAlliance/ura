@@ -52,3 +52,7 @@ export function lineBreak(string: string, separator = '\n') {
 
     return addressLines;
 }
+
+export const getDisabled = <T extends object>(errors: T) => {
+    return Object.keys(errors).length > 0;
+};

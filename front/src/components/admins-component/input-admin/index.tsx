@@ -29,10 +29,10 @@ export const InputAdmin = ({
 
                     <div className="flex flex-col w-full gap-2">
                         <textarea
-                            className={textarea}
                             {...props}
                             name={name}
                             value={value}
+                            className={textarea}
                         />
                         {error && <span className="text-warning">{error}</span>}
                     </div>

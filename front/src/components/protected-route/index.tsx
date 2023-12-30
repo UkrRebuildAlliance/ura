@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import Cookies from 'js-cookie';
 import { Navigate } from 'react-router-dom';
 
@@ -11,6 +10,5 @@ export const ProtectedRoute = ({ children }: ChildrenProps) => {
         return <Navigate to="/login" />;
     }
 
-    useEffect(() => {}, [isToken]);
     return children;
 };
