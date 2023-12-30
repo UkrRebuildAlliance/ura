@@ -1,7 +1,7 @@
 type InfoPartnersItem = {
     id: string;
-    name: string;
     src: string;
+    name: string;
 };
 
 export interface InfoPartnersProps {

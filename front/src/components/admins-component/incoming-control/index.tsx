@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import clsx from 'clsx';
+import { Link } from 'react-router-dom';
 
 import Delete from '@/assets/svg/delete.svg?react';
 
