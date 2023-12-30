@@ -9,7 +9,7 @@ interface CustomButton
 export interface IButton extends Omit<CustomButton, 'ref'> {
     text?: string;
     icon?: ReactNode;
-    variant: IVariant;
+    variant?: IVariant;
     iconRight?: boolean;
     isFetching?: boolean;
 }

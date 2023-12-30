@@ -6,8 +6,8 @@ interface StylePros {
 }
 
 export const getStyles = ({ aspect, error }: StylePros) => {
-    return clsx(
-        'flex flex-col items-center justify-center w-full h-full gap-4 p-4 rounded-20 bg-partnersMatt border border-partnersMatt cursor-pointer transition-all duration-300 ',
+    const label = clsx(
+        'flex flex-col items-center justify-center w-full h-full rounded-20 bg-partnersMatt border border-partnersMatt cursor-pointer transition-all duration-300 ',
         {
             'border-warning': error,
             'border-partnersMatt hover:border-white': !error,
@@ -16,4 +16,10 @@ export const getStyles = ({ aspect, error }: StylePros) => {
             [`aspect-[${aspect}]`]: aspect,
         },
     );
+
+    const img = clsx('object-contain w-full h-full rounded-20', {
+        [`aspect-[${aspect}]`]: aspect,
+    });
+
+    return { label, img };
 };

@@ -13,6 +13,7 @@ interface FormProps {
     defaultValues?: FieldValues;
     onSubmit: SubmitHandler<FieldValues>;
     validationSchema?: Yup.AnyObjectSchema;
+    mode?: 'onChange' | 'onBlur' | 'onSubmit' | 'all';
 }
 
 export function Form({
@@ -20,8 +21,10 @@ export function Form({
     onSubmit,
     defaultValues,
     validationSchema,
+    mode = 'onSubmit',
 }: FormProps) {
     const methods = useForm<FieldValues>({
+        mode,
         defaultValues: defaultValues ?? {},
         resolver: yupResolver(validationSchema ?? Yup.object()),
     });

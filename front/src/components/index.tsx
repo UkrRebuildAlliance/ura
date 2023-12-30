@@ -48,4 +48,4 @@ export {
     AdminNavigation,
 } from './admins-component';
 
-export { ButtonForm } from './form-handler';
+export { ButtonForm, ButtonAdminForm } from './form-handler';
