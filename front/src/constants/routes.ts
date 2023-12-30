@@ -21,6 +21,7 @@ export const routes = {
         news_create: '/dashboard/news/create',
         news_id: '/dashboard/news/:newsId',
         partner: '/dashboard/partners',
+        partner_create: '/dashboard/partners/create',
         partner_id: '/dashboard/partners/:partnersId',
         project: '/dashboard/project',
         project_id: '/dashboard/project/:projectId',
@@ -28,6 +29,7 @@ export const routes = {
         discover_id: '/dashboard/discover/:discoverId',
         reporting: '/dashboard/reporting',
         incoming: '/dashboard/incoming',
+        incoming_id: '/dashboard/incoming/:incomingId',
     },
     login: '/login',
 };

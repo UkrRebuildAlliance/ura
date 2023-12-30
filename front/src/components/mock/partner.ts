@@ -5,29 +5,35 @@ import l4 from './img/partner4.png';
 import l5 from './img/partner2.png';
 import l6 from './img/partner3.png';
 
-export const partners: { src: string; name: string }[] = [
+export const partners: { src: string; name: string; id: string }[] = [
     {
         src: l1,
-        name: '1',
+        name: 'International Alliance',
+        id: 'asd',
     },
     {
         src: l2,
-        name: '2',
+        name: 'Euam Equipments',
+        id: 'asd1',
     },
     {
         src: l3,
-        name: '3',
+        name: 'Some BTRG Inc.',
+        id: 'asd2',
     },
     {
         src: l4,
-        name: '4',
+        name: 'Ulia Opotunitec',
+        id: 'asd3',
     },
     {
         src: l5,
-        name: '5',
+        name: 'Gregorius Farms',
+        id: 'asd4',
     },
     {
         src: l6,
-        name: '6',
+        name: 'Europian Alliance Rebuild',
+        id: 'asd5',
     },
 ];

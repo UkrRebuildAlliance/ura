@@ -19,6 +19,7 @@ export interface InputProps extends Omit<CustomInput, 'ref'> {
     name: string;
     label?: string;
     error?: string;
+    isWhiteText?: boolean;
     onChange?: (e: InputOnChangeEventType) => void;
 }
 

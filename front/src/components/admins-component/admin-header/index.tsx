@@ -21,7 +21,7 @@ export const AdminHeader = ({}) => {
 
                 <Exit
                     onClick={exit}
-                    className="w-[40px] min-w-[40px] tablet:w-[50px] desktop:w-[60px]  cursor-pointer hover:scale-95 transition-all duration-200"
+                    className="w-[40px] drop-shadow-md min-w-[40px] tablet:w-[50px] desktop:w-[60px]  cursor-pointer hover:scale-95 transition-all duration-200"
                 />
             </AdminContainer>
         </header>

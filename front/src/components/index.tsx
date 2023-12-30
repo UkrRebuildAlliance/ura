@@ -36,7 +36,12 @@ export {
     LoginForm,
     InputAdmin,
     ButtonAdmin,
+    InfoDetails,
+    InfoControl,
     AdminHeader,
     AdminContainer,
+    PartnersControl,
+    IncomingDetails,
+    PartnersDetails,
     AdminNavigation,
 } from './admins-component';
