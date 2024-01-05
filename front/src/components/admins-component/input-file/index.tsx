@@ -18,17 +18,20 @@ export const InputFile = ({
         formState: { errors },
         ...rest
     } = useFormContext();
-
     const [img, setImg] = useState<null | string>(null);
 
     const errorText = errors[name]?.message;
 
-    const styles = getStyles({ aspect, error: !!errorText });
+    const styles = getStyles({ error: !!errorText });
 
     const image = rest.watch(name);
 
     useEffect(() => {
-        if (image) {
+        if (image && typeof image === 'string') {
+            setImg(image);
+        }
+
+        if (image && typeof image !== 'string') {
             try {
                 const imageURL = URL.createObjectURL(image[0]);
                 setImg(imageURL);
@@ -39,26 +42,29 @@ export const InputFile = ({
     }, [image]);
 
     return (
-        <div className="flex flex-col w-full gap-4">
-            <label className={styles.label}>
+        <div className="flex flex-col w-full gap-2">
+            <label className={styles.label} style={{ aspectRatio: aspect }}>
                 {!img && (
-                    <div className="flex flex-col items-center justify-center gap-4 m-4">
+                    <div className="flex flex-col items-center justify-center gap-4 m-4 text-[12px] sm:text-[14px] laptop:text-[16px] text-center">
                         <File width={40} height={40} />
 
-                        <p className="text-center">
-                            Натисніть тут, щоб завантажити
-                        </p>
+                        <p>Натисніть тут, щоб завантажити</p>
 
                         <div>
-                            <p className="mb-2 text-center">
-                                Файл не може бути
-                            </p>
-                            <p className="text-center">більшим ніж 5MB</p>
+                            <p>Файл не може бути</p>
+                            <p>більшим ніж 5MB</p>
                         </div>
                     </div>
                 )}
 
-                {img && <img src={img} alt="image" className={styles.img} />}
+                {img && (
+                    <img
+                        src={img}
+                        alt="image"
+                        className={styles.img}
+                        style={{ aspectRatio: aspect }}
+                    />
+                )}
 
                 <input
                     type="file"
@@ -68,10 +74,14 @@ export const InputFile = ({
                 />
             </label>
 
-            {errorText && <p className="text-warning">{errorText as string}</p>}
+            {errorText && (
+                <p className="text-xs text-warning">{errorText as string}</p>
+            )}
 
             {textExampleSize && (
-                <p className="text-center text-[18px]">{textExampleSize}</p>
+                <p className="text-center text-[10px] sm:text-[14px]">
+                    {textExampleSize}
+                </p>
             )}
         </div>
     );
