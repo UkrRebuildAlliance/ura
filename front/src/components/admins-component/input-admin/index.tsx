@@ -1,15 +1,13 @@
 import clsx from 'clsx';
+import { useFormContext } from 'react-hook-form';
 
 import { getStyles } from './styles';
 import { InputProps } from './types';
 import { SwitchPassword } from './switch';
 
 export const InputAdmin = ({
-    id,
     name,
-    error,
     label,
-    value,
     disabled,
     className,
     isWhiteText,
@@ -17,12 +15,19 @@ export const InputAdmin = ({
     type = 'text',
     ...props
 }: InputProps) => {
+    const {
+        register,
+        formState: { errors },
+    } = useFormContext();
+
+    const errorText = errors[name]?.message;
+
     const isTypePassword = type === 'password';
     const { currentType, switcher } = SwitchPassword(isTypePassword);
     const changingType = isTypePassword ? currentType : type;
 
     const { textarea, mainInput } = getStyles(
-        error,
+        !!errorText,
         isTypePassword,
         isWhiteText,
     );
@@ -45,12 +50,15 @@ export const InputAdmin = ({
 
                     <div className="flex flex-col w-full gap-2">
                         <textarea
+                            {...register(name)}
                             {...props}
-                            name={name}
-                            value={value}
                             className={textarea}
                         />
-                        {error && <span className="text-warning">{error}</span>}
+                        {errorText && (
+                            <span className="text-xs text-warning">
+                                {errorText as string}
+                            </span>
+                        )}
                     </div>
                 </label>
             )}
@@ -69,27 +77,20 @@ export const InputAdmin = ({
 
                     <div className="relative">
                         <input
-                            name={name}
-                            value={value}
-                            id={id ?? name}
+                            {...register(name)}
                             type={changingType}
                             disabled={disabled}
                             placeholder={placeholder}
                             {...props}
-                            onChange={(e) => {
-                                if (props.onChange) {
-                                    props.onChange(e);
-                                }
-                            }}
                             className={mainInput}
                         />
 
                         {isTypePassword && switcher}
                     </div>
 
-                    {error && (
+                    {errorText && (
                         <span className="mt-1 text-xs text-warning">
-                            {error}
+                            {errorText as string}
                         </span>
                     )}
                 </label>

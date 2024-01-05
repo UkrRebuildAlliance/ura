@@ -1,4 +1,6 @@
 export { AdminNews } from './admin-news';
+export { AdminNewsId } from './admin-news-id';
+export { AdminPartnerId } from './admin-partner-id';
 export { AdminPartnersPage } from './admin-partners';
 export { AdminProject } from './admin-project';
 export { AdminReportingPage } from './admin-reporting-page';

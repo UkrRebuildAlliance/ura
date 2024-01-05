@@ -5,7 +5,7 @@ export const PartnersCreatePage = ({}) => {
         <>
             <PageHead title="Додати партнера" />
 
-            <PartnersDetails />
+            <PartnersDetails onSubmit={(ee) => console.log(ee)} />
         </>
     );
 };

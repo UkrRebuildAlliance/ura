@@ -32,8 +32,8 @@ export const ButtonAdmin = ({
                     {text && (
                         <span
                             className={clsx('select-none group/btn', {
-                                'text-white group-hover/btn:text-loginBg':
-                                    variant === 'primary',
+                                'text-white ': variant === 'primary',
+                                'group-hover/btn:text-loginBg': !disabled,
                             })}
                         >
                             {text}

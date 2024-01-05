@@ -5,7 +5,7 @@ export const NewsCreatePage = ({}) => {
         <>
             <PageHead title="Створення новини" />
 
-            <InfoDetails />
+            <InfoDetails onSubmit={(data) => console.log(data)} />
         </>
     );
 };
