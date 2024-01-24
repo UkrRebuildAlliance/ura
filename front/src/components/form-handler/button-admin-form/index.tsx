@@ -5,13 +5,13 @@ import { getDisabled } from '@/utils/helpers';
 import { IButton } from '@/components/admins-component/btn-admin/type';
 
 export const ButtonAdminForm = ({ text, type, ...rest }: IButton) => {
-    const {
-        formState: { errors },
-    } = useFormContext();
+  const {
+    formState: { errors },
+  } = useFormContext();
 
-    const isDisabled = getDisabled(errors);
+  const isDisabled = getDisabled(errors);
 
-    return (
-        <ButtonAdmin {...rest} text={text} type={type} disabled={isDisabled} />
-    );
+  return (
+    <ButtonAdmin {...rest} text={text} type={type} disabled={isDisabled} />
+  );
 };

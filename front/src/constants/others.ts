@@ -6,4 +6,4 @@ export const acceptFile = ['image/png', 'image/jpeg', 'image/jpg'];
 
 export const ukrainianLettersRegExp = /^[а-щА-ЩЬьЮюЯяЇїІіЄєҐґЁё'0-9\s]+$/;
 export const englishLettersRegExp =
-    /^[a-zA-Z\d\s!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+$/;
+  /^[a-zA-Z\d\s!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+$/;

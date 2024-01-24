@@ -6,11 +6,11 @@ import { Navigate } from 'react-router-dom';
 import { ChildrenProps } from '@/types';
 
 export const ProtectedRoute = ({ children }: ChildrenProps) => {
-    const isToken = true;
+  const isToken = true;
 
-    if (!isToken) {
-        return <Navigate to="/login" />;
-    }
+  if (!isToken) {
+    return <Navigate to="/login" />;
+  }
 
-    return children;
+  return children;
 };

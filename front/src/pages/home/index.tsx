@@ -1,24 +1,24 @@
 import {
-    partners,
-    NewsBlock,
-    MainBanner,
-    SectionTeam,
-    AreasActivity,
-    PartnersSlider,
+  partners,
+  NewsBlock,
+  MainBanner,
+  SectionTeam,
+  AreasActivity,
+  PartnersSlider,
 } from '@/components';
 
 export const HomePage = () => {
-    return (
-        <>
-            <MainBanner />
+  return (
+    <>
+      <MainBanner />
 
-            <AreasActivity />
+      <AreasActivity />
 
-            <NewsBlock />
+      <NewsBlock />
 
-            <PartnersSlider partners={partners} />
+      <PartnersSlider partners={partners} />
 
-            <SectionTeam />
-        </>
-    );
+      <SectionTeam />
+    </>
+  );
 };

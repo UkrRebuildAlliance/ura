@@ -33,19 +33,19 @@ export { SocialSvg } from './social-svg';
 export { TeamsCard } from './teams-card';
 export { TitleContainer } from './title-container';
 export {
-    PageHead,
-    InputFile,
-    LoginForm,
-    InputAdmin,
-    ButtonAdmin,
-    InfoDetails,
-    InfoControl,
-    AdminHeader,
-    AdminContainer,
-    PartnersControl,
-    IncomingDetails,
-    PartnersDetails,
-    AdminNavigation,
+  PageHead,
+  InputFile,
+  LoginForm,
+  InputAdmin,
+  ButtonAdmin,
+  InfoDetails,
+  InfoControl,
+  AdminHeader,
+  AdminContainer,
+  PartnersControl,
+  IncomingDetails,
+  PartnersDetails,
+  AdminNavigation,
 } from './admins-component';
 
 export { ButtonForm, ButtonAdminForm } from './form-handler';
