@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-import { teams_for_page } from '@/components/mock/teams';
+import { teams } from '@/components/mock/teams';
 import { PageBanner, PageContainer, TeamsCard } from '@/components';
 
 export const TeamPage = ({}) => {
@@ -14,7 +14,7 @@ export const TeamPage = ({}) => {
             />
             <PageContainer>
                 <div className="flex flex-wrap justify-between w-full gap-[20px_0] mb-[32px] tablet:mb-0">
-                    {teams_for_page.map(({ src, name, job_title, id }, idx) => (
+                    {teams.map(({ src, name, job_title, id }, idx) => (
                         <div
                             key={`home-teams-block-${idx}`}
                             className="max-w-[calc(48%)] w-full laptop:max-w-[24%]"

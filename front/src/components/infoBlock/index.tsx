@@ -39,7 +39,7 @@ export const InfoBlock = ({
                 <div
                     className={`flex flex-col w-full tablet:max-w-[45.5%] laptop:max-w-[47.5%] ${className}`}
                 >
-                    <h2 className="mb-6 font-bold text-center tablet:mb-5 tablet:text-left">
+                    <h2 className="mb-6 font-bold text-center tablet:mb-5 tablet:text-left text-ellipsis line-clamp-1">
                         {title}
                     </h2>
 
@@ -69,7 +69,9 @@ export const InfoBlock = ({
                     className={`flex w-full gap-10 desktop:gap-4 desktopLg:gap-10 max-w-[48%]  ${className}`}
                 >
                     <div className="flex flex-col">
-                        <h2 className="font-bold text-[18px]">{title}</h2>
+                        <h2 className="font-bold text-[18px] text-ellipsis line-clamp-1">
+                            {title}
+                        </h2>
 
                         <div className="pt-8 mb-5 place-self-start">{date}</div>
 

@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 //  TODO For testing app in IOS
 // import Cookies from 'js-cookie';
 import { Navigate } from 'react-router-dom';

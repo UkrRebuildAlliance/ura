@@ -12,19 +12,19 @@ interface iconSocial {
 
 export const icons: iconSocial[] = [
     {
-        to: '#',
+        to: 'https://www.facebook.com/UkraineRebuildingAlliance',
         Component: Fb,
     },
     {
-        to: '#',
+        to: 'https://www.linkedin.com/company/ukraine-reconstruction-alliance/',
         Component: In,
     },
     {
-        to: '#',
+        to: 'https://t.me/UkraineRebuildingAlliance',
         Component: Tg,
     },
     {
-        to: '#',
+        to: 'https://www.instagram.com/ukrainerebuildingalliance/',
         Component: Inst,
     },
 ];

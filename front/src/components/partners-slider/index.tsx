@@ -47,15 +47,9 @@ export const PartnersSlider = ({ className, partners }: IPartnerSlider) => {
                         disableOnInteraction: false,
                     }}
                 >
-                    {partners.map(({ src }, idx) => (
+                    {partners.map(({ src, href }, idx) => (
                         <SwiperSlide key={`main-partner-slider-${idx}`}>
-                            <PartnersCard img={src} />
-                        </SwiperSlide>
-                    ))}
-
-                    {partners.map(({ src }, idx) => (
-                        <SwiperSlide key={`main-partner-slider-${idx}-2`}>
-                            <PartnersCard img={src} />
+                            <PartnersCard img={src} href={href} />
                         </SwiperSlide>
                     ))}
                 </Swiper>

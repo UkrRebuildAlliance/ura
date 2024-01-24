@@ -40,12 +40,16 @@ export const PartnersPage = ({}) => {
             />
 
             <div className="pt-[50px] pb-[112px] laptop:pt-[100px] laptop:pb-[100px] desktopLg:pt-[150px] desktopLg:pb-[186px] flex  gap-[50px_10px] sm:flex-row flex-wrap tablet:gap-[50px_25px] laptop:gap-[50px_30px] desktopLg:tablet:gap-[60px]">
-                {partners.map(({ src }, idx) => (
+                {partners.map(({ src, href }, idx) => (
                     <div
                         key={`partners-page-card-${idx}`}
                         className="w-full sm:max-w-[48%] laptop:max-w-[30%] shadow-xl rounded-[20px]"
                     >
-                        <PartnersCard img={src} className="w-full max-w-full" />
+                        <PartnersCard
+                            img={src}
+                            href={href}
+                            className="w-full max-w-full"
+                        />
                     </div>
                 ))}
             </div>

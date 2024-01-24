@@ -2,10 +2,10 @@ import {
     partners,
     NewsBlock,
     MainBanner,
+    SectionTeam,
     AreasActivity,
     PartnersSlider,
 } from '@/components';
-import { SectionTeam } from '@/components/section-team';
 
 export const HomePage = () => {
     return (
