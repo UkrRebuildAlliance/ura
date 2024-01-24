@@ -6,9 +6,9 @@ interface GetDataProps {
   news: {
     id: string;
     src: string;
-    content: string[];
     date: string;
     title: string;
+    content: string[];
   }[];
   shortVersion?: boolean;
 }
@@ -27,8 +27,8 @@ export const RenderInfo = ({ news, shortVersion, to }: GetDataProps) => {
               img={src}
               date={date}
               title={title}
-              text={content.join(' ')}
               to={`${to}/${id}`}
+              text={content.join(' ')}
               key={`main-news-block-${idx}`}
             />
           );
