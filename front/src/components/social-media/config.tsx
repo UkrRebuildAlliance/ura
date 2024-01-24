@@ -6,25 +6,25 @@ import Tg from '@/assets/svg/social/tg.svg?react';
 import Inst from '@/assets/svg/social/inst.svg?react';
 
 interface iconSocial {
-    to: string;
-    Component: FunctionComponent<SVGProps<SVGSVGElement>>;
+  to: string;
+  Component: FunctionComponent<SVGProps<SVGSVGElement>>;
 }
 
 export const icons: iconSocial[] = [
-    {
-        to: '#',
-        Component: Fb,
-    },
-    {
-        to: '#',
-        Component: In,
-    },
-    {
-        to: '#',
-        Component: Tg,
-    },
-    {
-        to: '#',
-        Component: Inst,
-    },
+  {
+    to: 'https://www.facebook.com/UkraineRebuildingAlliance',
+    Component: Fb,
+  },
+  {
+    to: 'https://www.linkedin.com/company/ukraine-reconstruction-alliance/',
+    Component: In,
+  },
+  {
+    to: 'https://t.me/UkraineRebuildingAlliance',
+    Component: Tg,
+  },
+  {
+    to: 'https://www.instagram.com/ukrainerebuildingalliance/',
+    Component: Inst,
+  },
 ];

@@ -1,8 +1,8 @@
 export type IAcc = {
-    [key: string]: string;
+  [key: string]: string;
 };
 
 export interface IBreadcrumbs {
-    className?: string;
-    isBanner?: boolean;
+  className?: string;
+  isBanner?: boolean;
 }

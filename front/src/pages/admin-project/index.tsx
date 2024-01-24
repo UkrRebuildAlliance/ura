@@ -1,3 +1,3 @@
 export const AdminProject = () => {
-    return <>Admin project</>;
+  return <>Admin project</>;
 };

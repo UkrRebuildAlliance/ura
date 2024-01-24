@@ -4,6 +4,5 @@
   "jsxSingleQuote": false,
   "bracketSpacing": true,
   "arrowParens": "always",
-  "endOfLine": "lf",
-  "tabWidth": 4
+  "endOfLine": "lf"
 }

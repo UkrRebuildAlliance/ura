@@ -1,29 +1,29 @@
 import {
-    ReactNode,
-    ChangeEvent,
-    DetailedHTMLProps,
-    InputHTMLAttributes,
+  ReactNode,
+  ChangeEvent,
+  DetailedHTMLProps,
+  InputHTMLAttributes,
 } from 'react';
 type InputOnChangeEventType =
-    | ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-    | string;
+  | ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  | string;
 
 interface CustomInput
-    extends DetailedHTMLProps<
-        InputHTMLAttributes<HTMLInputElement | HTMLTextAreaElement>,
-        HTMLInputElement | HTMLTextAreaElement
-    > {}
+  extends DetailedHTMLProps<
+    InputHTMLAttributes<HTMLInputElement | HTMLTextAreaElement>,
+    HTMLInputElement | HTMLTextAreaElement
+  > {}
 
 export interface InputProps extends Omit<CustomInput, 'ref'> {
-    id?: string;
-    name: string;
-    label?: string;
-    error?: string;
-    isWhiteText?: boolean;
-    onChange?: (e: InputOnChangeEventType) => void;
+  id?: string;
+  name: string;
+  label?: string;
+  error?: string;
+  isWhiteText?: boolean;
+  onChange?: (e: InputOnChangeEventType) => void;
 }
 
 export interface ISwitchPassword {
-    switcher: ReactNode;
-    currentType: 'password' | 'text';
+  switcher: ReactNode;
+  currentType: 'password' | 'text';
 }
